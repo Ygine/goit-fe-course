@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #eee;
+  font-family: 'Playfair Display', Regular;
+}
+.wrapper{
+  width: 1200px;
+  height: 2079px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid transparent; 
+}
+.nav-list{
+  width:572px;
+  height:16px;
+  margin: 70px auto 0 auto;
+}
+  .nav-list li{
+    display: inline;
+    float: left;
+    list-style: none;
+  }
+   .nav-list-PhotoDiary{
+     margin-left: 122px;
+   }
+   .nav-list-Music{
+      margin-left: 103px;
+   }
+   .nav-list-Travel{
+    margin-left: 93px;
+   }
+  .nav-list li a{
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    color:#626262;
+    transition: all 0.5s; 
+  }
+  .nav-list li a:hover{
+    color: #03a9f4;
+    box-shadow: 0 0 30px rgb(233, 227, 227)
+  }
+  .block{
+    width: 901px;
+    height: 485px;
+    margin: 106px auto 0 auto;
+  }
+    .block li{
+      display: inline-block;
+      float: left;
+      width: 421px;
+      height: 480px;
+    } 
+   .block figcaption{
+      margin-top: 23px;
+      font-size:14px;
+      text-transform: uppercase;
+      color: #b4ad9e;
+    }
+    .block h3{
+      font-size: 30px;
+      margin-top: 15px;
+      margin-bottom: 29px;
+      color:#626262;
+      }
+      .block p{
+        color:rgb(98, 98, 98); 
+        font-size: 14px;
+        line-height: 24px;
+      }
+      .list-right{
+        margin-left: 59px;
+      } 
+      .mg-top{
+        margin-top: 126px;
+      }
+ button{
+   display: block;
+   width: 165px;
+   height: 59px;
+   font-size: 20px;
+   background-color: #fff;
+   outline: none;
+   border: 1px solid #626262;
+   cursor: pointer;
+   margin: 50px auto 0 auto;
+   transition: all 1s;  
+}
+ footer button:hover{
+  background-color: #eee;
+  border-radius: 50%;
+  color: #03a9f4;
+}

@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  box-sizing: border-box;
+}
+body{
+  background-color: #fff;
+}
+
+                                      /* SECTION 1 */
+section{
+  margin-top: 50px;
+}
+.task-1{
+  width:900px;
+  height:38px;
+  background-color: #ddd;
+  border-radius: 5px;  
+  margin: 0 auto;
+  border: 2px solid rgb(56, 27, 161) ;
+}
+  .task-1 li{
+    width: 149.33px;
+    height: 34px;
+    display: inline;
+    float: left;
+   text-align: center;
+    padding: 1.4px;
+    border: 1px solid #fff; 
+    list-style: none;
+  }
+    .task-1 li a{
+      text-decoration: none;
+      line-height: 1.6;
+      font-weight: 600;
+    }
+ .task-1 li:hover{
+  background-color:#eee;
+  border: 1px solid transparent; 
+  }
+  .task-1 li:hover a{
+    color:rgb(204, 42, 13);
+    }
+
+                                       /* SECTION 2*/
+
+.task-2{
+  width: 470px;
+  height: 530px;
+  margin: 50px auto;
+  box-shadow: 0 1.7px 4px #b4ad9e;
+  padding: 30px 25px; 
+  background-color: #fff;
+} 
+
+  .task-2 figcaption, .task-3 figcaption{
+    margin-top: 25px;
+    font-size:14px;
+    text-transform: uppercase;
+    color: #b4ad9e;
+  }
+  .task-2 h3, .task-3 h3{
+    font-size: 30px;
+    margin-top: 22px;
+    margin-bottom: 25px;
+    color:rgb(98, 98, 98);
+    }
+    .task-2 p, .task-3 p{
+      color:rgb(98, 98, 98); 
+    }
+
+    /* SECTION 3 */
+
+
+.task-3{
+  width: 960px;
+  height: 540px;
+  margin: 0 auto;
+  box-shadow: 0 1.7px 4px #b4ad9e;
+}
+  .task-3 li{
+    display: inline-block;
+    float: left;
+    width: 460px;
+    height: 500px;
+    padding: 30px 25px; 
+  }  
+  .list-right{
+    margin-left: 25px;
+  } 
+

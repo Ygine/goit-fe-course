@@ -42,7 +42,6 @@ body{
   }
   .nav-list li a:hover{
     color: #03a9f4;
-    box-shadow: 0 0 30px rgb(233, 227, 227)
   }
   .block{
     width: 901px;
@@ -90,7 +89,7 @@ body{
    margin: 50px auto 0 auto;
    transition: all 1s;  
 }
- footer button:hover{
+ button:hover{
   background-color: #eee;
   border-radius: 50%;
   color: #03a9f4;

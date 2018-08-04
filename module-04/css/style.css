@@ -1,0 +1,202 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper{
+  width: 1110px;
+  height: 1838px;
+  background-color: #fff; 
+  margin: 0 auto;
+}
+  .logo{
+    display: inline-block;
+    margin-top: 31px;
+    font-size: 30px;
+    text-transform: uppercase; 
+    cursor: pointer;
+    float: left;
+  }
+    .logo .logo-linc{
+      text-decoration: none;
+      color:#555252;
+      font-family: "Roboto", Light, sans-serif;
+    }
+    .logo::first-letter{
+      font-family: "Roboto", sans-serif;
+      font-size: 30px;
+      font-weight: 900;
+      color: rgb(26, 188, 156);
+    }
+    .clear{
+      clear: both;
+      height: auto;
+     overflow: hidden;
+    }
+  .nav-list{
+    display: inline-block;
+    width: 463px;
+    list-style-type: none;
+    float: right; 
+    vertical-align: bottom;
+    margin-top:44px;
+  }  
+    .nav-list li{
+      float: left;
+      font-family: "Open Sans", Bold, sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      line-height: 11px;
+    }
+      .nav-list li:nth-child(n+2){
+        margin-left: 29.3px;
+      }
+      .nav-list li a{
+         text-decoration: none;
+        font-weight: bold;
+        color: #0f0101;
+      }
+      .nav-list li a:hover{
+        color:#1abc9c;
+      }
+
+                        /* SECTION PRODUCT */
+h1{
+  font-family: "Roboto Black", sans-serif;
+  text-transform: uppercase;
+  font-size: 48px;
+  letter-spacing:-1px;
+  color: #515151;
+  margin-top: 85px;
+  margin-left: 326px;
+  position: relative;
+}
+.products-title::after{
+  position: absolute;
+  display: inline-block;
+  content:"_______";
+  font-size: 55px;
+  left: 148px;
+  top: 28px;
+  color:  #1abc9c;
+}
+.products ul{
+  margin-top: 119px;
+}
+.products ul li{
+  display: inline-block;
+  float:left;
+  width: 255px;
+  height: 322px;
+  list-style-type: none;
+}
+.products ul li:nth-child(n+2):nth-child(-n+4),
+.products ul li:nth-child(n+6):nth-child(-n+8)
+{
+  margin-left:30px;
+}
+.products ul li:nth-child(n+5){
+  margin-top: 30px;
+}
+
+.underline::after{
+  position: absolute;
+  display: inline-block;
+  content:"_______";
+  font-size: 55px;
+  left: 70px;
+  top: 26px;
+  color:  #1abc9c;
+}
+.list-product:hover .product{
+  background-color: #1abc9c;
+}
+.list-product:hover span{
+  background-color: #7fd9c7;
+}
+.product{
+  height: 40px;
+  background-color: #323232;
+  color:#fff;
+  margin-top: -4px;
+  font-family: "Roboto","Roboto-Black", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 40px;
+  /* letter-spacing: -1px; */
+  padding-left: 13px;
+}
+  .product .product-prise{
+    display: inline-block;
+    width: 54px;
+    background-color: #8c8c8c;
+    float: right;
+    text-align: center;
+  }
+
+  /* SECTION NEWS */
+
+ .news{
+   width: 1110px;
+   height: 663px;
+   margin-top: 92px;
+ } 
+  .news-caption{
+    margin-left: 397px;
+  }
+  .news-list{
+    margin-top: 110px;
+  }
+    .news .news-list .news-list-item:nth-child(n+2){
+      margin-left: 30px;
+    }
+    .news .news-list .news-list-item{
+      width: 350px;
+      height: 497px;
+      background-color: #fff;
+      margin: 0 auto;
+      float: left;
+      list-style-type: none;
+    }
+  .news-article-caption{
+    font: bold 18px/26px "Open Sans Semibold", sans-serif;
+    color: #555252;
+    margin-top: 8px; 
+    position: relative;
+  }
+    .news-article-caption::after{
+      position: absolute;
+      content:"___________";
+      top:40px;
+      left:0;
+      color: #1abc9c;
+      font-size: 30px;
+    }
+  .news-article-text{
+    font: 14px/26px "Open Sans Regular", sans-serif;
+    letter-spacing: -0.2px;
+    margin-top: 32px;
+  }
+  .news-article-button{
+    width: 159px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: #4ec6ab;
+    border-radius: 3px;
+    color:#fff;
+    margin-top: 13px;
+    cursor: pointer;
+    transition: all 0.4s;
+    border: 2px solid transparent;
+    position: relative;
+  }
+  .news-article-button:hover{
+    color:#4ec6ab;
+    background-color: #fff;
+    border: 2px solid #4ec6ab;
+  }
+
+  
+

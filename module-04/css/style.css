@@ -20,7 +20,7 @@
     .logo .logo-linc{
       text-decoration: none;
       color:#555252;
-      font-family: "Roboto", Light, sans-serif;
+      font-family: "Roboto Light", Regular,sans-serif;
     }
     .logo::first-letter{
       font-family: "Roboto", sans-serif;
@@ -71,15 +71,15 @@ h1{
   margin-left: 326px;
   position: relative;
 }
-.products-title::after{
-  position: absolute;
-  display: inline-block;
-  content:"_______";
-  font-size: 55px;
-  left: 148px;
-  top: 28px;
-  color:  #1abc9c;
-}
+  .products-title::after{
+    position: absolute;
+    display: inline-block;
+    content:"_______";
+    font-size: 55px;
+    left: 148px;
+    top: 28px;
+    color:  #1abc9c;
+  }
 .products ul{
   margin-top: 119px;
 }

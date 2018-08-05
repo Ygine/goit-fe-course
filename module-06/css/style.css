@@ -37,7 +37,7 @@
       height: auto;
      overflow: hidden;
     }
-  .menu{
+  .nav-list{
     display: inline-block;
     width: 463px;
     list-style-type: none;
@@ -45,71 +45,24 @@
     vertical-align: bottom;
     margin-top:44px;
   }  
-    .menu .menu-item{
+    .nav-list li{
       float: left;
       font-family: "Open Sans", Bold, sans-serif;
       font-size: 14px;
       text-transform: uppercase;
       line-height: 11px;
     }
-      .menu .menu-item:nth-child(n+2){
+      .nav-list li:nth-child(n+2){
         margin-left: 29.5px;
       }
-      .menu .menu-item .menu-item-link{
+      .nav-list li a{
          text-decoration: none;
         font-weight: bold;
         color: #0f0101;
       }
-      .menu .menu-item .menu-item-link:hover{
+      .nav-list li a:hover{
         color:#1abc9c;
       }
-
-                                  /*START SUBMENU */
-  .submenu{
-    display: none;
-    position: absolute;
-    width: 350px;
-    height: 191px;
-    top:53px;
-    list-style-type: none;
-    z-index: 2;
-    border-top: 10px solid rgba(84, 161, 143, 0);
-    background-color: rgba(255, 255, 255, 0.4)
-  }  
-  .submenu .submenu-item{
-    width: 150px;
-    height: 30px;
-    background-color:rgba(84, 161, 143, 0.9);
-    margin-top: 5px;
-    line-height: 2;
-    text-align: center;
-    border: 1px solid #fff;
-    border-radius: 3px;
-    font-family: "Open Sans", sans-serif;
-  }  
-  .submenu-about_us{
-    right: 245px;
-  }
-    .submenu-item a{
-      text-decoration: none;
-      color:#fff;
-      cursor: pointer;
-    }
-  .menu-item:hover .submenu{
-    display: block;
-  }                            
-  .submenu-item:hover{
-    background-color:rgba(60, 130, 110, 0.75);
-  }   
-  .submenu-item-img{
-    float: right;
-    font-size: 100px;
-    font-weight: 900;
-    color:#fff;
-    margin-top: -100px;
-  }                         
-                                  
-                                  /*END SUBMENU */
 
                                    /*START SECTION SLIDER */
 .slider{

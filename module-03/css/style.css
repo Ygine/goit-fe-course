@@ -5,7 +5,7 @@
 }
 body{
   background-color: #eee;
-  font-family: 'Playfair Display', Regular;
+  font-family: 'Playfair Display', sans-serif;
 }
 .wrapper{
   width: 1200px;
@@ -14,70 +14,77 @@ body{
   background-color: #fff;
   border: 1px solid transparent; 
 }
-.nav-list{
+.menu{
   width:572px;
   height:16px;
   margin: 70px auto 0 auto;
 }
-  .nav-list li{
+  .menu .menu-list{
     display: inline;
     float: left;
     list-style: none;
   }
-   .nav-list-PhotoDiary{
+   .menu-list:nth-child(2){
      margin-left: 122px;
    }
-   .nav-list-Music{
+   .menu-list:nth-child(3){
       margin-left: 103px;
    }
-   .nav-list-Travel{
+   .menu-list:nth-child(4){
     margin-left: 93px;
    }
-  .nav-list li a{
+   .menu-list-link{
     text-transform: uppercase;
     font-size: 14px;
+    line-height: 24px;
     text-decoration: none;
     color:#626262;
-    transition: all 0.5s; 
   }
-  .nav-list li a:hover{
+   .menu-list .menu-list-link:hover{
     color: #03a9f4;
   }
-  .block{
-    width: 901px;
-    height: 485px;
-    margin: 106px auto 0 auto;
+  .main{
+    width: 900px;
+    height: 1888px;
+    margin: 0 auto;
+    margin-top: 106px
   }
-    .block li{
+    .article{
       display: inline-block;
-      float: left;
-      width: 421px;
-      height: 480px;
+      width: 420px;
+      height: 475px;
     } 
-   .block figcaption{
-      margin-top: 23px;
+      .img-subtext{
+      margin-top: 25px;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 300;
       font-size:14px;
+      line-height: 17px;
       text-transform: uppercase;
       color: #b4ad9e;
     }
-    .block h3{
+      .center{
+        margin-top: 135px;
+      }
+      .bottom{
+        margin-top: 141px;
+      }
+      .article-caption{
       font-size: 30px;
-      margin-top: 15px;
-      margin-bottom: 29px;
+      line-height: 36px;
+      margin-top: 20px;
+      margin-bottom: 28px;
       color:#626262;
       }
-      .block p{
+      .article-text{
         color:rgb(98, 98, 98); 
         font-size: 14px;
         line-height: 24px;
       }
-      .list-right{
-        margin-left: 59px;
+      .second{
+        margin-left: 56px;
       } 
-      .mg-top{
-        margin-top: 126px;
-      }
- button{
+ .button{
    display: block;
    width: 165px;
    height: 59px;
@@ -86,11 +93,32 @@ body{
    outline: none;
    border: 1px solid #626262;
    cursor: pointer;
-   margin: 50px auto 0 auto;
+   margin: 55px auto 0 auto;
    transition: all 1s;  
-}
- button:hover{
-  background-color: #eee;
-  border-radius: 50%;
-  color: #03a9f4;
-}
+  }
+  .button:hover{
+    background-color: #eee;
+    border-radius: 50%;
+    color: #03a9f4;
+  }
+
+/* .visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
+
+

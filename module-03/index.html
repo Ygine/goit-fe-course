@@ -5,6 +5,7 @@
   <meta name="author" content="Evhen Lysiuk">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css"> 
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <title>Document</title>
@@ -13,98 +14,59 @@
   <div class="wrapper">  
     <header>
       <nav>
-         <ul class="nav-list">
-            <li class="nav-list-Lifestyle"><a href="#">Lifestyle</a></li>
-            <li class="nav-list-PhotoDiary"><a href="#">PhotoDiary</a></li>
-            <li class="nav-list-Music"><a href="#">Music</a></li>
-            <li class="nav-list-Travel"><a href="#">Travel</a></li>
-          </ul> 
-        </nav> 
+        <ul class="menu">
+          <li class="menu-list"><a href="#" class="menu-list-link">Lifestyle</a></li>
+          <li class="menu-list"><a href="#" class="menu-list-link">PhotoDiary</a></li>
+          <li class="menu-list"><a href="#" class="menu-list-link">Music</a></li>
+          <li class="menu-list"><a href="#" class="menu-list-link">Travel</a></li>
+        </ul> 
+      </nav> 
     </header>
-    <main>
-      <section class="block">
-        <ul>
-          <li>
-            <article>
-              <figure>
-                <img src="img/image-1.jpg" alt="Dance" width="421" height="280">
-                <figcaption>lifestyle</figcaption>   
-              </figure>
-              <h3>More than just a music festival</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-            </article>
-          </li>
-          <li class="list-right">
-            <article>
-              <figure>
-                <img src="img/cofe.jpg" alt="cofe"  width="421" height="280">
-                <figcaption>lifestyle</figcaption>   
-              </figure>
-              <h3>Life tastes better with coffee</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
-            </article>
-          </li>
-        </ul>
-      </section>
-
-      <section class="block mg-top">
-         <ul>
-            <li>
-              <article>
-                <figure>
-                  <img src="img/image-3.jpg" alt="bridge"  width="421" height="280">
-                  <figcaption>photodiary</figcaption>   
-                </figure>
-                <h3>American dream</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-              </article>
-            </li>
-            <li class="list-right">
-              <article>
-                <figure>
-                  <img src="img/image-4.jpg" alt="silhouette"  width="421" height="280">
-                  <figcaption>photodiary</figcaption>   
-                </figure>
-                <h3>A day exploring the Alps</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
-                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
-              </article>
-            </li>
-          </ul>
-      </section>
-        
-      <section class="block mg-top">
-            <ul>
-              <li>
-                <article>
-                  <figure>
-                    <img src="img/image-5.jpg" alt="cowboy"  width="421" height="280">
-                    <figcaption>lifestyle</figcaption>   
-                  </figure>
-                  <h3>Top 10 song for running</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-                </article>
-              </li>
-              <li class="list-right">
-                <article>
-                  <figure>
-                    <img src="img/image-6.jpg" alt="road"  width="421" height="280">
-                    <figcaption>lifestyle</figcaption>   
-                  </figure>
-                  <h3>Cold winter days</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
-                </article>
-              </li>
-            </ul>
-        </section>        
-        <button>Load more</button>
-    </main>
-       
+    <main class="main">
+      <article class="article">
+        <img src="img/image-1.jpg" alt="Dance" width="421" height="280">
+        <p class="img-subtext">lifestyle</p> 
+        <h3 class="article-caption">More than just a music festival</h3>
+        <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+      </article>
+      <article class="article second">
+        <img src="img/cofe.jpg" alt="cofe"  width="421" height="280">
+        <p class="img-subtext">lifestyle</p>    
+        <h3 class="article-caption">Life tastes better with coffee</h3>
+        <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+           et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+        </article>
+      <article class="article center">  
+        <img src="img/image-3.jpg" alt="bridge"  width="421" height="280">
+        <p class="img-subtext">photodiary</p>   
+        <h3 class="article-caption">American dream</h3>
+        <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+      </article>
+      <article class="article second center">
+        <img src="img/image-4.jpg" alt="silhouette"  width="421" height="280">
+        <p class="img-subtext">photodiary</p>
+        <h3 class="article-caption">A day exploring the Alps</h3>
+        <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+      </article>
+      <article class="article bottom">
+        <img src="img/image-5.jpg" alt="cowboy"  width="421" height="280">
+        <p class="img-subtext">lifestyle</p> 
+        <h3 class="article-caption">Top 10 song for running</h3>
+        <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+      </article>
+      <article class="article second bottom">
+        <img src="img/image-6.jpg" alt="road"  width="421" height="280">
+        <p class="img-subtext">lifestyle</p> 
+        <h3 class="article-caption">Cold winter days</h3>
+        <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+           et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+      </article>     
+      <button class="button">Load more</button>
+    </main>     
   </div>
 </body>
 </html>

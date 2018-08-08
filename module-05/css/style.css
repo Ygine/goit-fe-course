@@ -74,7 +74,7 @@
     list-style-type: none;
     z-index: 2;
     border-top: 10px solid rgba(84, 161, 143, 0);
-    background-color: rgba(255, 255, 255, 0.4)
+    background-color: rgba(255, 255, 255, 0.4);
   }  
   .submenu .submenu-item{
     width: 150px;

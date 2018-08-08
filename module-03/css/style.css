@@ -12,12 +12,12 @@ body{
   height: 2079px;
   margin: 0 auto;
   background-color: #fff;
-  border: 1px solid transparent; 
+  padding-top: 70px;
 }
 .menu{
   width:572px;
   height:16px;
-  margin: 70px auto 0 auto;
+  margin: auto;
 }
   .menu .menu-list{
     display: inline;

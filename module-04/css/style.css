@@ -9,125 +9,117 @@
   background-color: #fff; 
   margin: 0 auto;
 }
+.navigation{
+  width: 1110px;
+  height: 32px;
+  padding-top:31px;
+}
   .logo{
     display: inline-block;
-    margin-top: 31px;
     font-size: 30px;
     text-transform: uppercase; 
     cursor: pointer;
-    float: left;
+    vertical-align: middle;
   }
-    .logo .logo-linc{
+  .logo .logo-link{
       text-decoration: none;
       color:#555252;
-      font-family: "Roboto Light", Regular,sans-serif;
+      font-family: "Roboto",sans-serif;
+      font-weight: 300;
     }
-    .logo::first-letter{
+  .logo::first-letter{
       font-family: "Roboto", sans-serif;
       font-size: 30px;
       font-weight: 900;
       color: rgb(26, 188, 156);
     }
-    .clear{
-      clear: both;
-      height: auto;
-     overflow: hidden;
-    }
-  .nav-list{
-    display: inline-block;
-    width: 463px;
+  .nav-menu{
+    display: inline-block; 
+    width: 457px;
     list-style-type: none;
-    float: right; 
-    vertical-align: bottom;
-    margin-top:44px;
+    margin-left: 568px;
   }  
-    .nav-list li{
-      float: left;
-      font-family: "Open Sans", Bold, sans-serif;
+     .nav-menu-list{
+      float: left; 
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
       font-size: 14px;
       text-transform: uppercase;
       line-height: 11px;
     }
-      .nav-list li:nth-child(n+2){
-        margin-left: 29.3px;
+      .nav-menu-list:nth-child(n+2){
+        margin-left: 28px;
       }
-      .nav-list li a{
-         text-decoration: none;
-        font-weight: bold;
+      .nav-menu-list .nav-link{
+        text-decoration: none;
+        font-weight: 700;
         color: #0f0101;
       }
-      .nav-list li a:hover{
+      .nav-menu-list .nav-link:hover{
         color:#1abc9c;
       }
 
-                        /* SECTION PRODUCT */
-h1{
-  font-family: "Roboto Black", sans-serif;
+                        /* SECTION PRODUCT */                   
+ .products-title, .news-title{
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
+  font-weight: 900;
   font-size: 48px;
+  line-height: 32px;
   letter-spacing:-1px;
   color: #515151;
-  margin-top: 85px;
-  margin-left: 326px;
-  position: relative;
+  text-align: center;
 }
-  .products-title::after{
-    position: absolute;
-    display: inline-block;
-    content:"_______";
-    font-size: 55px;
-    left: 148px;
-    top: 28px;
-    color:  #1abc9c;
+.products-title{
+  margin-top: 129px;
+}
+  .products-title::after,
+  .news-title::after{
+    display:block;
+    content:"";
+    width: 165px;
+    height: 7px;
+    background-color:  #1abc9c;
+    margin: 0 auto;
+    margin-top: 36px;
   }
-.products ul{
-  margin-top: 119px;
+.product-menu{
+  margin-top: 91px;
 }
-.products ul li{
+.product-menu-list{
   display: inline-block;
   float:left;
   width: 255px;
   height: 322px;
   list-style-type: none;
 }
-.products ul li:nth-child(n+2):nth-child(-n+4),
-.products ul li:nth-child(n+6):nth-child(-n+8)
-{
-  margin-left:30px;
+.product-menu-list:nth-child(n+2):nth-child(-n+4),
+.product-menu-list:nth-child(n+6):nth-child(-n+8){
+  margin-left:29.8px;
 }
-.products ul li:nth-child(n+5){
+.product-menu-list:nth-child(n+5){
   margin-top: 30px;
 }
 
-.underline::after{
-  position: absolute;
-  display: inline-block;
-  content:"_______";
-  font-size: 55px;
-  left: 70px;
-  top: 26px;
-  color:  #1abc9c;
-}
-.list-product:hover .product{
+.product-menu-list:hover .product-name{
   background-color: #1abc9c;
 }
-.list-product:hover span{
+.product-menu-list:hover .product-prise{
   background-color: #7fd9c7;
 }
-.product{
+.product-name{
   height: 40px;
   background-color: #323232;
   color:#fff;
   margin-top: -4px;
-  font-family: "Roboto","Roboto-Black", sans-serif;
-  font-weight: bold;
-  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 40px;
   /* letter-spacing: -1px; */
   padding-left: 13px;
 }
-  .product .product-prise{
+   .product-prise{
     display: inline-block;
     width: 54px;
     background-color: #8c8c8c;
@@ -140,43 +132,45 @@ h1{
  .news{
    width: 1110px;
    height: 663px;
-   margin-top: 92px;
+   margin-top: 105px;
  } 
-  .news-caption{
-    margin-left: 397px;
-  }
   .news-list{
-    margin-top: 110px;
+    margin-top: 79px;
   }
-    .news .news-list .news-list-item:nth-child(n+2){
-      margin-left: 30px;
+    .news-list-item:nth-of-type(n+2){
+      margin-left: 29px;
     }
-    .news .news-list .news-list-item{
+     .news-list-item{
+      float: left;
       width: 350px;
       height: 497px;
       background-color: #fff;
       margin: 0 auto;
-      float: left;
       list-style-type: none;
     }
   .news-article-caption{
-    font: bold 18px/26px "Open Sans Semibold", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.1px;
+    font-weight: 600;
     color: #555252;
-    margin-top: 8px; 
-    position: relative;
+    margin-top: 7px; 
   }
     .news-article-caption::after{
-      position: absolute;
-      content:"___________";
-      top:40px;
-      left:0;
-      color: #1abc9c;
-      font-size: 30px;
+      display:block;
+      content:"";
+      width: 137px;
+      height: 3px;
+      background-color:  #1abc9c;
+      margin-top: 9px;
     }
   .news-article-text{
-    font: 14px/26px "Open Sans Regular", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    line-height: 26px;
+    font-size: 14px;
     letter-spacing: -0.2px;
-    margin-top: 32px;
+    margin-top: 22px;
   }
   .news-article-button{
     width: 159px;
@@ -186,16 +180,20 @@ h1{
     background-color: #4ec6ab;
     border-radius: 3px;
     color:#fff;
-    margin-top: 13px;
+    margin-top: 11px;
     cursor: pointer;
     transition: all 0.4s;
     border: 2px solid transparent;
-    position: relative;
   }
   .news-article-button:hover{
     color:#4ec6ab;
     background-color: #fff;
     border: 2px solid #4ec6ab;
+  }
+  .clearfix{
+    display: table;
+    content: "";
+    clear:both;
   }
 
 /* .visually-hidden:not(:focus):not(:active),

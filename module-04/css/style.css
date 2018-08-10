@@ -10,16 +10,16 @@
   margin: 0 auto;
 }
 .navigation{
+  display: inline-block;
   width: 1110px;
   height: 32px;
-  padding-top:31px;
+  margin-top:31px;
 }
   .logo{
-    display: inline-block;
+    float: left;
     font-size: 30px;
     text-transform: uppercase; 
     cursor: pointer;
-    vertical-align: middle;
   }
   .logo .logo-link{
       text-decoration: none;
@@ -34,10 +34,10 @@
       color: rgb(26, 188, 156);
     }
   .nav-menu{
-    display: inline-block; 
+    float: right;
     width: 457px;
     list-style-type: none;
-    margin-left: 568px;
+    margin-top: 13px;
   }  
      .nav-menu-list{
       float: left; 
@@ -58,20 +58,23 @@
       .nav-menu-list .nav-link:hover{
         color:#1abc9c;
       }
-
-                        /* SECTION PRODUCT */                   
+                                               /* SECTION PRODUCT */                   
  .products-title, .news-title{
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 32px;
-  letter-spacing:-1px;
-  color: #515151;
-  text-align: center;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 32px;
+    letter-spacing:-1px;
+    color: #515151;
 }
 .products-title{
-  margin-top: 129px;
+  margin-top: 98px;
+  margin-left: 327px;
+}
+.news-title{
+  margin-left: 398px;
 }
   .products-title::after,
   .news-title::after{
@@ -84,7 +87,7 @@
     margin-top: 36px;
   }
 .product-menu{
-  margin-top: 91px;
+  margin-top: 57px;
 }
 .product-menu-list{
   display: inline-block;
@@ -93,9 +96,8 @@
   height: 322px;
   list-style-type: none;
 }
-.product-menu-list:nth-child(n+2):nth-child(-n+4),
-.product-menu-list:nth-child(n+6):nth-child(-n+8){
-  margin-left:29.8px;
+.product-menu-list:not(:nth-child(4n)){
+  margin-right:29.8px;
 }
 .product-menu-list:nth-child(n+5){
   margin-top: 30px;
@@ -132,10 +134,10 @@
  .news{
    width: 1110px;
    height: 663px;
-   margin-top: 105px;
+   margin-top: 75px;
  } 
   .news-list{
-    margin-top: 79px;
+    margin-top: 45px;
   }
     .news-list-item:nth-of-type(n+2){
       margin-left: 29px;

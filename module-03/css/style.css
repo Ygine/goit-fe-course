@@ -1,53 +1,47 @@
-*{
-  margin: 0;
-  padding: 0;
+html{
   box-sizing: border-box;
 }
+*, *::before, *::after{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
 body{
-  background-color: #eee;
-  font-family: 'Playfair Display', sans-serif;
+  background-color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  line-height: 24px;
 }
 .wrapper{
-  width: 1200px;
+  width: 900px;
   height: 2079px;
   margin: 0 auto;
   background-color: #fff;
-  padding-top: 70px;
+  padding-top: 66px;
+}
+.header{
+  height: 126px;
+  padding-top: 5px;
 }
 .menu{
-  width:572px;
-  height:16px;
-  margin: auto;
+  font-size:0;
+  text-align: center;
+  font-size: 0;
 }
-  .menu .menu-list{
-    display: inline;
-    float: left;
+  .menu-list{
+    display: inline-block;
     list-style: none;
+    margin-left: 50px;
   }
-   .menu-list:nth-child(2){
-     margin-left: 122px;
-   }
-   .menu-list:nth-child(3){
-      margin-left: 103px;
-   }
-   .menu-list:nth-child(4){
-    margin-left: 93px;
-   }
    .menu-list-link{
-    text-transform: uppercase;
     font-size: 14px;
-    line-height: 24px;
     text-decoration: none;
+    text-transform: uppercase;
     color:#626262;
+    padding: 10px 25px;
   }
    .menu-list .menu-list-link:hover{
     color: #03a9f4;
-  }
-  .main{
-    width: 900px;
-    height: 1888px;
-    margin: 0 auto;
-    margin-top: 106px
   }
     .article{
       display: inline-block;
@@ -55,7 +49,7 @@ body{
       height: 475px;
     } 
       .img-subtext{
-      margin-top: 25px;
+      margin-top: 23px;
       font-family: "Ubuntu", sans-serif;
       font-weight: 300;
       font-size:14px;
@@ -63,29 +57,25 @@ body{
       text-transform: uppercase;
       color: #b4ad9e;
     }
-      .center{
-        margin-top: 135px;
-      }
-      .bottom{
-        margin-top: 141px;
-      }
       .article-caption{
       font-size: 30px;
       line-height: 36px;
-      margin-top: 20px;
+      margin-top: 19px;
       margin-bottom: 28px;
       color:#626262;
       }
       .article-text{
         color:rgb(98, 98, 98); 
         font-size: 14px;
-        line-height: 24px;
       }
-      .second{
-        margin-left: 55px;
-      } 
+      .article:nth-child(n+3){
+        margin-top: 133px;
+      }
+      .article:nth-child(2n){
+        margin-left: 56px
+      }
  .button{
-   display: block;
+   display:block;
    width: 165px;
    height: 59px;
    font-size: 20px;
@@ -93,13 +83,7 @@ body{
    outline: none;
    border: 1px solid #626262;
    cursor: pointer;
-   margin: 55px auto 0 auto;
-   transition: all 1s;  
-  }
-  .button:hover{
-    background-color: #eee;
-    border-radius: 50%;
-    color: #03a9f4;
+   margin: 50px auto 0 auto;  
   }
 
 /* .visually-hidden:not(:focus):not(:active),

@@ -1,7 +1,15 @@
+html{
+  box-sizing: border-box
+}
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+body{
+  font-family: "Roboto", "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 .wrapper{
   width: 100%;
@@ -11,56 +19,43 @@
 }
   .header{
     width: 1112px;
+    height: 91px;
     margin: 0 auto;
+    padding-top: 30px;
   }
   .logo{
     display: inline-block;
-    margin-top: 31px;
     font-size: 30px;
-    text-transform: uppercase; 
     cursor: pointer;
     float: left;
   }
     .logo .logo-linc{
       text-decoration: none;
       color:#555252;
-      font-family: "Roboto Light", sans-serif;
+      font-weight: 300;
     }
     .logo::first-letter{
-      font-family: "Roboto", sans-serif;
       font-size: 30px;
       font-weight: 900;
       color: rgb(26, 188, 156);
     }
-    .clear{
-      clear: both;
-      height: auto;
-     overflow: hidden;
-    }
   .menu{
-    display: inline-block;
-    width: 463px;
     list-style-type: none;
-    float: right; 
-    vertical-align: bottom;
-    margin-top:44px;
+    float: right;
+    padding-top: 12px;
+    margin-right: -15px;
   }  
-    .menu .menu-item{
+    .menu-item{
       float: left;
-      font-family: "Open Sans", Bold, sans-serif;
-      font-size: 14px;
-      text-transform: uppercase;
       line-height: 11px;
     }
-      .menu .menu-item:nth-child(n+2){
-        margin-left: 29.5px;
-      }
-      .menu .menu-item .menu-item-link{
-         text-decoration: none;
-        font-weight: bold;
+      .menu-item-link{
+        text-decoration: none;
+        font-weight: 700;
         color: #0f0101;
+        padding: 10px 14px;
       }
-      .menu .menu-item .menu-item-link:hover{
+      .menu-item-link:hover{
         color:#1abc9c;
       }
 
@@ -72,20 +67,19 @@
     height: 191px;
     top:53px;
     list-style-type: none;
-    z-index: 2;
     border-top: 10px solid rgba(84, 161, 143, 0);
     background-color: rgba(240, 238, 238, 0.4);
   }  
-  .submenu .submenu-item{
+  .submenu-item{
     width: 150px;
     height: 30px;
     background-color:rgba(84, 161, 143, 0.9);
     margin-top: 5px;
     line-height: 2;
+    font-family: "Open Sans";
     text-align: center;
     border: 1px solid #fff;
     border-radius: 3px;
-    font-family: "Open Sans", sans-serif;
   }  
   .submenu-about_us{
     right: 245px;
@@ -107,37 +101,32 @@
     font-weight: 900;
     color:#fff;
     margin-top: -100px;
-  }                         
-                                  
+  }                                                    
                                   /*END SUBMENU */
 
                                    /*START SECTION SLIDER */
 .slider{
-  position: relative;
   width: 100%;
   height: 600px;
   background-image: url(../img/slide-bgr.jpg);
-  margin-top: 32px;
 }
-  .slide-body .slide-caption{
+  .slide-caption{
     position: relative;
     display: inline-block;
-    font: 60px/82px "Roboto Black", sans-serif;
-    text-transform: uppercase;
+    font: 900 60px/82px "Roboto";
     color: #fff;
     margin: 200px 0 0 394px;
     letter-spacing: -1.3px;
   }
-    .slide-body .slide-caption::after{
+    .slide-caption::after{
       position: absolute;
       top:31px;
-      left: 823px;
+      left: 822px;
       height: 103px;
       content: "\e684";
-      font-family: 'Pe-icon-7-stroke';
-      font-size:103px;
-      line-height: 1;
-      background-color: rgba(84, 161, 143, 0.85);
+      font: 103px/1'Pe-icon-7-stroke';
+      background-color: rgba(84, 161, 143, 0.9);
+      cursor: pointer;
     }
     .slide-body .slide-caption::before{
       position: absolute;
@@ -145,79 +134,68 @@
       right: 824px;
       height: 103px;
       content: "\e686";
-      font-family: 'Pe-icon-7-stroke';
-      font-size:103px;
-      line-height: 1;
+      font: 103px/1 'Pe-icon-7-stroke';
       background-color: rgba(84, 161, 143, 0.9);
+      cursor: pointer;
+
     }
     .slide-subtitle{
-      text-transform: uppercase;
-      font: 24px/54px Roboto, Light, sans-serif;
+      font:300 24px/54px "Roboto";
       letter-spacing: -0.43px;
       margin-left: 390px;
       margin-top: 1px;
       color: #fff;
     }
-
-
-
-
                                /*START SECTION NEW COLLECTION */
-.new-collection-block{
+.new-collection{
   width: 100%;
   height: 675px;
   background: #e9f0fd;
+  padding-top: 100px;
 }
   .products-title{
-  font-family: "Roboto Black", "Roboto", sans-serif;
-  text-transform: uppercase;
-  font-size: 48px;
+  font: 900 48px/32px "Roboto";
   letter-spacing:-1px;
   color: #515151;
-  margin-top: 90px;
   text-align: center;
-  position: relative;
 }
 .products-title::after{
-  position: absolute;
-  display: inline-block;
-  content:"_______";
-  font-size: 55px;
-  left:675px;
-  top: 28px;
-  color:  #1abc9c;
+  display:block;
+  content:"";
+  width: 165px;
+  height: 7px;
+  background-color:  #1abc9c;
+  margin: 0 auto;
+  margin-top: 36px;
 }
- .new-collection{
+ .collection-list{
    width: 1112px;
    height: 322px;
-  margin: 108px auto 0 auto;
+  margin: 79px auto 0 auto;
 }
-.list-collection:nth-child(1){
+.collection-item:nth-child(1){
   background-image: url(../img/category-2.jpg);}
-.list-collection:nth-child(2){
+.collection-item:nth-child(2){
   background-image: url(../img/category-1.jpg);}
-.list-collection:nth-child(3){
+.collection-item:nth-child(3){
   background-image: url(../img/category-4.jpg);}
-.list-collection:nth-child(4){
+.collection-item:nth-child(4){
   background-image: url(../img/category-3.jpg);}
 
- .new-collection .list-collection{
+.collection-item{
   display: inline-block;
-  float:left;
-  width: 255px;
-  height: 322px;
   list-style-type: none;
 }
- .new-collection .list-collection:nth-child(n+2){
+.collection-item:nth-child(n+2){
   margin-left:30px;
 }
-.list-collection:hover .product-name{
+.collection-item:hover .product-name{
   background-color: #1abc9c;
 }
-.list-collection:hover .product-prise{
+.collection-item:hover .product-prise{
   background-color: #7fd9c7;
 }
-.list-collection:hover .bgr-fon{
+.collection-item:hover .bgr-fon{
   display: block;
 }
 
@@ -237,6 +215,7 @@
      display: inline-block;
      margin-top: 78px;
      margin-left: 35px;
+     font-size: 0;
   } 
   .card-block .card-item{
     width: 50px;
@@ -276,8 +255,8 @@
     outline: none;
     background-color: #323232;
     color: #fff;
+    font:400 14px/32px "Open Sans";
     text-transform: uppercase;
-    font: 14px/32px "Open Sans", Regular, sans-serif;
     cursor: pointer;
   }
   .card-block .card-button i{
@@ -295,14 +274,10 @@
     height: 40px;
     background-color: #323232;
     color:#fff;
-    font-family: "Roboto","Roboto-Black", sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    text-transform: uppercase;
-    line-height: 40px;
+    font: 900 18px/40px "Roboto";
     padding-left: 13px;
   }
-    .product-name .product-prise{
+    .product-prise{
       display: inline-block;
       width: 54px;
       background-color: #8c8c8c;
@@ -315,19 +290,41 @@
     width: 100%;
     height: 88px;
     background-color: #323232;
-    text-align: center;    
+    text-align: center;
+    text-transform: none; 
+    padding-top: 30px;   
   }
     .footer-text{
       display: inline-block;
-      font: normal 16px/28px "Open Sans", "Regular", sans-serif;
+      font-family: "Open Sans";
+      font: 400 16px/28px "Open Sans";
       color: #fff;
-      margin-top: 30px;
       letter-spacing: -0.3px;
     }
-      .footer-text span{
+      .footer-text .graph{
         color: #46bfa9;
       }
 
-
+.clearfix{
+  display: table;
+  content: "";
+  clear:both;
+}
   
+/* .visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+  position: absolute;
 
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */

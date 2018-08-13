@@ -14,10 +14,10 @@ body{
 }
 .wrapper{
   width: 900px;
-  height: 2079px;
   margin: 0 auto;
   background-color: #fff;
   padding-top: 71px;
+  padding-bottom: 70px;
 }
 .header{
   height: 126px;
@@ -44,7 +44,6 @@ body{
     .article{
       display: inline-block;
       width: 420px;
-      height: 475px;
     } 
       .img-subtext{
       margin-top: 23px;

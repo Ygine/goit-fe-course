@@ -11,6 +11,7 @@ body{
   font-family: 'Playfair Display', "Times New Roman", serif;
   font-size: 14px;
   line-height: 24px;
+  color:rgb(98, 98, 98); 
 }
 .wrapper{
   width: 900px;
@@ -29,16 +30,21 @@ body{
   .menu-list{
     display: inline-block;
     list-style: none;
-    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .menu-list:last-child{
+    margin-right: 0;
   }
    .menu-list-link{
-    font-size: 14px;
+    display: block;
+    font-size: 14px; 
     text-decoration: none;
     text-transform: uppercase;
     color:#626262;
     padding: 10px 25px;
   }
-   .menu-list .menu-list-link:hover{
+  .menu-list-link:hover,
+  .menu-list-link:focus{
     color: #03a9f4;
   }
     .article{
@@ -62,7 +68,6 @@ body{
       color:#626262;
       }
       .article-text{
-        color:rgb(98, 98, 98); 
         font-size: 14px;
       }
       .article:nth-child(n+3){

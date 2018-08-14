@@ -57,7 +57,9 @@ body{
         color:#1abc9c;
       }
                                                /* SECTION PRODUCT */                   
-
+  .products{
+    margin-bottom: 75px;
+  }   
   .products-title, .news-title{
     font-family: "Roboto";
     font-weight: 900;
@@ -74,7 +76,7 @@ body{
     height: 7px;
     background-color: #1abc9c;
     margin: 0 auto;
-    margin-top: 36px;
+    margin-top: 34px;
   }
 .product-content{
   margin-top: 92px;
@@ -88,8 +90,8 @@ body{
 .product-box:not(:nth-child(4n)){
   margin-right:29.8px;
 }
-.product-box:nth-child(n+5){
-  margin-top: 30px;
+.product-box:nth-child(-n+5){
+  margin-bottom: 30px;
 }
 .product-box:hover .product-name{
   background-color: #1abc9c;
@@ -115,15 +117,11 @@ body{
 
                                       /* SECTION NEWS */
 
- .news{
-   width: 1110px;
-   margin-top: 101px;
- } 
   .news-content{
     margin-top: 81px;
   }
-    .news-article:nth-of-type(n+2){
-      margin-left: 29px;
+    .news-article:nth-of-type(-n+2){
+      margin-right: 29px;
     }
     .news-article{
       float: left;
@@ -138,6 +136,7 @@ body{
     font-weight: 600;
     color: #555252;
     margin-top: 7px; 
+    margin-bottom: 22px;
     text-transform: none;   
   }
     .news-article-caption::after{
@@ -151,8 +150,8 @@ body{
   .news-article-text{
     line-height: 26px;
     letter-spacing: -0.2px;
-    margin-top: 22px;
     text-transform: none;
+    margin-bottom: 11px;
   }
   .news-article-button{
     width: 159px;
@@ -165,7 +164,6 @@ body{
     line-height: 26px;
     font-weight: 300;
     color:#fff;
-    margin-top: 11px;
     cursor: pointer;
     transition: all 0.4s;
     border: 2px solid transparent;

@@ -47,6 +47,9 @@ body{
   .menu-list-link:focus{
     color: #03a9f4;
   }
+  .article-list{
+    font-size: 0;
+  }
     .article-list-item{
       display: inline-block;
       width: 420px;
@@ -70,11 +73,11 @@ body{
       .article-text{
         font-size: 14px;
       }
-      .article-list-item:nth-child(n+3){
-        margin-top: 133px;
+      .article-list-item:nth-child(-n+4){
+        margin-bottom: 133px;
       }
-      .article-list-item:nth-child(2n){
-        margin-left: 56px
+      .article-list-item:not(:nth-child(2n)){
+        margin-right: 56px;
       }
  .button{
    display:block;

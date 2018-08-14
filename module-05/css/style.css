@@ -305,9 +305,9 @@ body{
         color: #46bfa9;
       }
 
-.clearfix{
-  display: table;
-  content: "";
+.clearfix::after{
+  display:table;
+  content:"";
   clear:both;
 }
   

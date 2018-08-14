@@ -47,7 +47,7 @@ body{
   .menu-list-link:focus{
     color: #03a9f4;
   }
-    .article{
+    .article-list-item{
       display: inline-block;
       width: 420px;
     } 
@@ -70,10 +70,10 @@ body{
       .article-text{
         font-size: 14px;
       }
-      .article:nth-child(n+3){
+      .article-list-item:nth-child(n+3){
         margin-top: 133px;
       }
-      .article:nth-child(2n){
+      .article-list-item:nth-child(2n){
         margin-left: 56px
       }
  .button{
@@ -88,7 +88,7 @@ body{
    margin: 50px auto 0 auto;  
   }
 
-/* .visually-hidden:not(:focus):not(:active),
+.visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden{
   position: absolute;
@@ -104,7 +104,7 @@ input[type="radio"].visually-hidden{
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
 
 

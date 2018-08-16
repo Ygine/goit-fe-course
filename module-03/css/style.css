@@ -54,19 +54,21 @@ body{
       display: inline-block;
       width: 420px;
     } 
+    .article-img{
+      margin-bottom: 23px;
+    }
       .img-subtext{
-      margin-top: 23px;
       font-family: "Ubuntu", sans-serif;
       font-weight: 300;
       font-size:14px;
       line-height: 17px;
+      margin-bottom: 19px;
       text-transform: uppercase;
       color: #b4ad9e;
     }
       .article-caption{
       font-size: 30px;
       line-height: 36px;
-      margin-top: 19px;
       margin-bottom: 28px;
       color:#626262;
       }

@@ -58,7 +58,7 @@ body{
       }
                                                /* SECTION PRODUCT */                   
   .products{
-    margin-bottom: 75px;
+    margin-bottom: 105px;
   }   
   .products-title, .news-title{
     font-family: "Roboto";
@@ -86,12 +86,13 @@ body{
   float:left;
   width: 255px;
   list-style-type: none;
+  margin-bottom: 30px
 }
 .product-box:not(:nth-child(4n)){
   margin-right:29.8px;
 }
-.product-box:nth-child(-n+5){
-  margin-bottom: 30px;
+.product-box:nth-last-child(-n+4){
+  margin-bottom: 0;
 }
 .product-box:hover .product-name{
   background-color: #1abc9c;
@@ -114,7 +115,6 @@ body{
     float: right;
     text-align: center;
   }
-
                                       /* SECTION NEWS */
 
   .news-content{
@@ -129,13 +129,15 @@ body{
       background-color: #fff;
       list-style-type: none;
     }
+    .article-img{
+      margin-bottom: 9px;
+    }
   .news-article-caption{
     font-size: 18px;
     line-height: 26px;
     letter-spacing: -0.1px;
     font-weight: 600;
-    color: #555252;
-    margin-top: 7px; 
+    color: #555252; 
     margin-bottom: 22px;
     text-transform: none;   
   }

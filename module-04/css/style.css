@@ -17,26 +17,24 @@ body{
   font-size: 14px;
 }
 .wrapper{
-  width: 1110px;
+  width: 1140px;
   background-color: #fff; 
   margin: 0 auto;
-  padding-bottom: 80px;
-  padding-top: 31px;
+  padding: 31px 15px 80px 15px;
 }
   .header{
     margin-bottom: 100px;
   }
-  .logo{
+  .logo-link{
+    display: inline-block;
     float: left;
     font-size: 30px;
     cursor: pointer;
+    text-decoration: none;
+    color:#555252;
+    font-weight: 300;
   }
-  .logo-link{
-      text-decoration: none;
-      color:#555252;
-      font-weight: 300;
-    }
-  .logo::first-letter{
+  .logo-link::first-letter{
       font-size: 30px;
       font-weight: 900;
       color: rgb(26, 188, 156);
@@ -44,7 +42,6 @@ body{
   .site-navigation{
     float: right;
     list-style-type: none;
-    margin-right: -14px;
   }  
     .nav-list{
       float: left; 
@@ -60,6 +57,9 @@ body{
       .nav-link:hover,
       .nav-link:focus{
         color:#1abc9c;
+      }
+      .nav-list:nth-last-child(1) .nav-link{
+        padding-right: 0;
       }
                                                /* SECTION PRODUCT */                   
   .products{

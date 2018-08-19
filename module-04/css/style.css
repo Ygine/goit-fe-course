@@ -178,18 +178,25 @@ body{
     border: none;
     background-color: #4ec6ab;
     border-radius: 3px;
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 300;
-    color:#fff;
     cursor: pointer;
     transition: all 0.4s;
     border: 2px solid transparent;
   }
   .news-article-button:hover{
-    color:#4ec6ab;
     background-color: #fff;
     border: 2px solid #4ec6ab;
+  }
+  .button-link{
+    display: block;
+    color:#fff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    padding: 10px 30px;
+  }
+  .news-article-button:hover .button-link{
+    color:#4ec6ab;
   }
   .clearfix::after{
     display:table;

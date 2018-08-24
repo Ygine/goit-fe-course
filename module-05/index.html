@@ -13,34 +13,34 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="clear header">
-      <p class="logo"><a href="#" class="logo-linc">mart</a></p>
-      <nav>
-        <ul class="menu">
-          <li class="menu-item">
-            <a href="#" class="menu-item-link">home</a>
+    <header class="header">
+      <a href="#" class="logo-link">mart</a>
+      <nav class="clearfix">
+        <ul class="site-navigation clearfix">
+          <li class="nav-list">
+            <a href="#" class="nav-link">home</a>
              <ul class="submenu">
                 <li class="submenu-item"><a>submenu-item 1</a></li>
                 <li class="submenu-item"><a>submenu-item 1</a></li>
                 <li class="submenu-item"><a>submenu-item 1</a></li>
                 <li class="submenu-item"><a>submenu-item 1</a></li>
                 <li class="submenu-item"><a>submenu-item 1</a></li>
-                <li class="submenu-item-img"><span class="pe-7s-home"></span></li>
+                <!-- <li class="submenu-item-img"><span class="pe-7s-home"></span></li> -->
               </ul>
           </li>
-          <li class="menu-item">
-            <a href="#" class="menu-item-link">about us</a>
+          <li class="nav-list">
+            <a href="#" class="nav-link">about us</a>
             <ul class="submenu submenu-about_us">
                 <li class="submenu-item"><a>submenu-item 2</a></li>
                 <li class="submenu-item"><a>submenu-item 2</a></li>
                 <li class="submenu-item"><a>submenu-item 2</a></li>
                 <li class="submenu-item"><a>submenu-item 2</a></li>
                 <li class="submenu-item"><a>submenu-item 2</a></li>
-                <li class="submenu-item-img"><span class="pe-7s-gift"></span></li>
+                <!-- <li class="submenu-item-img"><span class="pe-7s-gift"></span></li> -->
               </ul>          
           </li>
-          <li class="menu-item">
-            <a href="#" class="menu-item-link">page</a>
+          <li class="nav-list">
+            <a href="#" class="nav-link">page</a>
             <ul class="submenu submenu-page">
                 <li class="submenu-item"><a>submenu-item 3</a></li>
                 <li class="submenu-item"><a>submenu-item 3</a></li>
@@ -49,34 +49,34 @@
                 <li class="submenu-item"><a>submenu-item 3</a></li>
               </ul>
           </li>
-          <li class="menu-item">
-            <a href="#" class="menu-item-link">shop</a>           
+          <li class="nav-list">
+            <a href="#" class="nav-link">shop</a>           
           </li>
-          <li class="menu-item">
-            <a href="#" class="menu-item-link">blog</a>
+          <li class="nav-list">
+            <a href="#" class="nav-link">blog</a>
           </li>
-          <li class="menu-item">
-            <a href="#" class="menu-item-link">contact us</a>
+          <li class="nav-list">
+            <a href="#" class="nav-link">contact us</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="slider">
-        <div class="slide-body">
-          <h1 class="slide-caption">Affordable Paris tours</h1>
-          <p class="slide-subtitle">city tours / tour tickets / tour guides</p>
-        </div>
+          <div class="slide-body">
+              <h1 class="slide-caption">Affordable Paris tours</h1>
+              <p class="slide-subtitle">city tours / tour tickets / tour guides</p>
+            </div>
       </section>
 
       <section class="new-collection clearfix">
-        <h1 class="products-title">new collection</h1>
+        <div class="new-collection-wrap">
+        <h2 class="products-title">new collection</h2>
         <ul class="collection-list clearfix">
           <li class="collection-item">
-            <div class="wrap">
-              <div class="bgr-fon">
+              <div class="card-bgr">
                 <div class="card-block">
-                  <ul>
+                  <ul class="clearfix">
                     <li class="card-item"><button><i class="pe-7s-like"></i></button></li>
                     <li class="card-item"><button><i class="pe-7s-shuffle"></i></button></li>
                     <li class="card-item"><button><i class="pe-7s-clock"></i></button></li>
@@ -84,55 +84,61 @@
                   <button class="card-button"><i class="pe-7s-cart"></i>add to card</button>
                 </div>
               </div>
-            </div> 
-            <p class="product-name">Blue Tshirt<span class="product-prise">26$</span></p>
+            <div class="product-box-descr clearfix">
+                <p class="product-name">Blue Tshirt</p>
+                <p class="product-prise">26$</p>
+            </div>
           </li>
           <li class="collection-item">
-            <div class="wrap">
-              <div class="bgr-fon">
+              <div class="card-bgr">
                 <div class="card-block">
-                  <ul>
+                  <ul class="clearfix">
                     <li class="card-item"><button><i class="pe-7s-like"></i></button></li>
                     <li class="card-item"><button><i class="pe-7s-shuffle"></i></button></li>
                     <li class="card-item"><button><i class="pe-7s-clock"></i></button></li>
                   </ul>
                   <button class="card-button"><i class="pe-7s-cart"></i>add to card</button>
                 </div>
-              </div>
-            </div>            
-            <p class="product-name">Woman shirt<span class="product-prise">31$</span></p>
+              </div>           
+            <div class="product-box-descr clearfix">
+                <p class="product-name">Woman shirt</p>
+                <p class="product-prise">26$</p>
+            </div>
           </li>
           <li class="collection-item">
-              <div class="wrap">
-                <div class="bgr-fon">
+                <div class="card-bgr">
                   <div class="card-block">
-                    <ul>
+                    <ul class="clearfix">
                       <li class="card-item"><button><i class="pe-7s-like"></i></button></li>
                       <li class="card-item"><button><i class="pe-7s-shuffle"></i></button></li>
                       <li class="card-item"><button><i class="pe-7s-clock"></i></button></li>
                     </ul>
                     <button class="card-button"><i class="pe-7s-cart"></i>add to card</button>
                   </div>
-                </div>
-              </div>            
-            <p class="product-name">Yellow Tshirt<span class="product-prise">21$</span></p>
+                </div>           
+              <div class="product-box-descr clearfix">
+                  <p class="product-name">Yellow Tshirt</p>
+                  <p class="product-prise">26$</p>
+              </div>      
           </li>
           <li class="collection-item">
-              <div class="wrap">
-                <div class="bgr-fon">
+                <div class="card-bgr">
                   <div class="card-block">
-                    <ul>
-                      <li class="card-item"><button><i class="pe-7s-like"></i></button></li>
-                      <li class="card-item"><button><i class="pe-7s-shuffle"></i></button></li>
-                      <li class="card-item"><button><i class="pe-7s-clock"></i></button></li>
+                    <ul class="clearfix">
+                      <li class="card-item"><button class="card-icon-button"><i class="pe-7s-like"></i></button></li>
+                      <li class="card-item"><button class="card-icon-button"><i class="pe-7s-shuffle"></i></button></li>
+                      <li class="card-item"><button class="card-icon-button"><i class="pe-7s-clock"></i></button></li>
                     </ul>
                     <button class="card-button"><i class="pe-7s-cart"></i>add to card</button>
                   </div>
                 </div>
-              </div>            
-            <p class="product-name">Cool lingerie<span class="product-prise">56$</span></p>
+              <div class="product-box-descr clearfix">           
+                <p class="product-name">Cool lingerie</p>
+                <p class="product-prise">56$</p>
+             </div>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer class="footer">

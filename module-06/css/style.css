@@ -33,6 +33,8 @@ img{
 }
 .site-navigation{
   display: flex;
+  justify-content: space-between;
+  flex: 0 0 491px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -48,18 +50,12 @@ img{
   color: rgb(149, 225, 211);
   padding: 10px 0;
   border-bottom: 3px solid transparent;
+  transition: all 200ms linear;
 }
 .nav-item-link:hover,
 .nav-item-link:focus{
-  transition: all 200ms linear;
   color: rgba(243, 129, 129, 0.808);
   border-bottom: 3px solid rgb(243, 129, 129);
-}
-.nav-item{
-margin-right: 56px;
-}
-.nav-item:nth-last-child(1){
-margin-right: 0;
 }
 
                                         /* SERVICE START*/
@@ -70,8 +66,8 @@ margin-right: 0;
   padding: 0 10px 0 10px;
   margin-bottom: 88px;
 }                                       
-.service-subtitle,
-.team-subtitle{
+.service-descr,
+.team-descr{
   font: 400 24px/29px "Kaushan Script", cursive;
   margin: 0;
   margin-bottom: 14px;
@@ -97,43 +93,42 @@ margin-right: 0;
 .service-list{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style-type: none;
   text-align: left;
   margin: 0;
   padding: 0;
   font-size: 0;
 }
-.service-item{
+.service-list-item{
   position: relative;
-  width: 300px;
-  margin-left: 80px;
+  flex: 0 0 380px;
+  padding-left: 83px;
 }
-.service-item::before{
+.service-list-item::before{
   position: absolute;
-  top: 5px;
-  left: -60px;
+  top: 4px;
+  left: 20px;
   display: inline-block;
   content:"";
   width: 32px;
   height: 31px;
 }
-.service-item:nth-child(1)::before{
+
+.service-list-item:nth-child(1)::before{
   background-image: url(../img/ALARM.png);}
-.service-item:nth-child(2)::before{
+.service-list-item:nth-child(2)::before{
   background-image: url(../img/LINE_GRAPH.png);}
-.service-item:nth-child(3)::before{
+.service-list-item:nth-child(3)::before{
   background-image: url(../img/COMP_OK.png);}
-.service-item:nth-child(4)::before{
+.service-list-item:nth-child(4)::before{
   background-image: url(../img/BOOK.png);}
-.service-item:nth-child(5)::before{
+.service-list-item:nth-child(5)::before{
   background-image: url(../img/HOME.png);}
-.service-item:nth-child(6)::before{
+.service-list-item:nth-child(6)::before{
   background-image: url(../img/IMAGE.png);}
 
-.service-item:not(:nth-child(3n)){
-  margin-right: 20px;
-}
-.service-item:not(:nth-last-child(-n+3)){
+.service-list-item:not(:nth-last-child(-n+3)){
   margin-bottom: 99px;
 }
 .service-item-caption,.team-list-name{
@@ -171,9 +166,6 @@ margin-right: 0;
   padding: 0;
   cursor: pointer;
 }
-.team-list-item{
-  position: relative;
-}
 .team-list-item:not(:last-child){
   margin-right: 30px;
 }
@@ -184,15 +176,20 @@ margin-right: 0;
   background-color: #95e1d3;
   margin-bottom: 28px;
 }
-.fon{
+.socials-dlock{
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  top:0;
   width: 380px;
   height: 470px;
 }
+.team-list-item:hover .socials-dlock{
+  background: linear-gradient(to top, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%);  
+}
                                       /* SOCIAL ICONS START */
-.socials{
+.socials-list{
   display: flex;
   list-style-type: none;
   margin: 0;
@@ -202,60 +199,39 @@ margin-right: 0;
 .socials-item{
   background-color: rgb(252, 227, 138);
 }
-.socials-link{
+.social-icon{
     display: block;
     width: 56px;
     height: 56px;
 }
-.socials-item:not(:last-child) .socials-link{
+.socials-item:not(:last-child) .social-icon{
   border-right: 1px solid rgb(243, 129, 129);
 }
-.socials-item:hover{
+.social-icon:hover,
+.social-icon:focus{
   transition: all 200ms linear;
   background-color: rgb(149, 225, 211);
 }
-.team-list-item:hover .socials{
+.team-list-item:hover .socials-list{
   opacity: 1;
 }
-.socials-item:nth-child(1) .socials-link{
-  background: url(../img/facebook.png) no-repeat center center;}
-.socials-item:nth-child(2) .socials-link{
-  background: url(../img/twitter.png) no-repeat center center;}
-.socials-item:nth-child(3) .socials-link{
-  background: url(../img/pinterest.png) no-repeat center center;}
-.socials-item:nth-child(4) .socials-link{
-  background: url(../img/instagram.png) no-repeat center center;}
+.icon-facebook{
+  background: url(../img/facebook.png) no-repeat center;}
+.icon-twitter{
+  background: url(../img/twitter.png) no-repeat center;}
+.icon-pinterest{
+  background: url(../img/pinterest.png) no-repeat center;}
+.icon-instagram{
+  background: url(../img/instagram.png) no-repeat center;}
 
                       /* SOCIAL ICONS END */
 
-.team-list-item:nth-child(1) .fon{
-  background-image:url(../img/bearded_man.jpg);}
-.team-list-item:nth-child(2) .fon{
-  background-image:url(../img/photographer.jpg);}
-.team-list-item:nth-child(3) .fon{
-  background-image:url(../img/crazy_man.jpg);}
-
-.team-list-item:hover .fon{
+.team-list-item:hover .team-img{
   transition: all 200ms linear;
   position: absolute;
   margin-top: -10px ;
   margin-left: -10px; 
 } 
-.team-list-item:nth-child(1):hover .fon{
-   background-image:
-        linear-gradient(to top, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%),
-        url(../img/bearded_man.jpg);  
-}
-.team-list-item:nth-child(2):hover .fon{
-   background-image:
-        linear-gradient(to top, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%),
-        url(../img/photographer.jpg);  
-}
-.team-list-item:nth-child(3):hover .fon{
-   background-image:
-        linear-gradient(to top, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%),
-        url(../img/crazy_man.jpg);  
-}
 .team-list-name{
   margin-bottom: 10px;
 }
@@ -264,8 +240,6 @@ margin-right: 0;
   color: #999999;
   margin: 0;
 }
-
-
                                   /* SITE FOOTER */
 .site-footer{
   display: flex;
@@ -296,21 +270,42 @@ margin-right: 0;
   color: #cccccc;
 }
 .form-button{
-  display: inline-block;
-  width: 150px;
-  height: 40px;
+  display: block;
+  min-width: 150px;
   background-color: #95e1d3;
   font: 700 14px/17px "Montserrat", sans-serif;
   text-transform: uppercase;
-  text-align: center;
+  /* text-align: center; */
+  text-decoration: none;
   padding-top: 11px;
   color: #fff;
   border: none;
   margin: 0;
+  padding: 10px 33px;
+  border: 1px solid transparent;
 }
-.form-button:hover{
+.form-button:hover,
+.form-button:focus{
   transition: all 200ms linear;
   color: #95e1d3;
   background-color: #fff;
   border: 1px solid #95e1d3;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

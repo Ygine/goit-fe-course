@@ -24,9 +24,9 @@ img{
   margin: 0 auto;
   padding: 0 15px;
 }
-  .header{
-    margin: 33px 0 23px 0;
-  }
+.navigation-block{
+  padding: 33px 0 23px 0;
+}
     .logo-link{
       display: block;
       font-size: 30px;
@@ -104,8 +104,6 @@ img{
                                    /*START SECTION SLIDER */
 .slider{
   position: relative;
-}
-.slide-img{
   min-height:600px;
   background-image:
   linear-gradient(to right, rgba(0, 0, 2,0.5), rgba(0, 0, 2,0.5)),
@@ -116,7 +114,7 @@ img{
   top:50%;
   left:50%;  
   transform: translate(-50%, -50%); 
-  height: 118px; 
+  height: 600px; 
 }
 .slide-descr{
   position: absolute;
@@ -309,6 +307,7 @@ img{
     }
       .footer-text .graph{
         color: #46bfa9;
+        text-decoration: none;
       }
 
 .clearfix::after{

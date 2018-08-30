@@ -12,7 +12,6 @@
   <title>module-05</title>
 </head>
 <body>
-  <div class="wrapper">
     <header class="header">
       <nav class="clearfix container">
         <a href="#" class="logo-link">mart</a>
@@ -63,10 +62,16 @@
     </header>
     <main>
       <section class="slider">
-          <div class="slider-block container">
+        <div class="slide-img">  
+        </div>
+        <div class="slider-block container">
+          <button class="slider-ctrl slider-ctrl-prev"><i class="pe-7s-angle-left"></i></button>
+          <button class="slider-ctrl slider-ctrl-next"><i class="pe-7s-angle-right"></i></button>
+          <div class="slide-descr">
             <h1 class="slide-caption">Affordable Paris tours</h1>
             <p class="slide-subtitle">city tours / tour tickets / tour guides</p>
           </div>
+        </div>
       </section>
 
       <section class="new-collection">
@@ -75,50 +80,80 @@
         <ul class="collection-list clearfix">
           <li class="collection-item">
             <img src="img/category-2.jpg" alt="Blue Tshirt" width="255" height="322">
-              <div class="card-bgr">
-                <div class="card-block">
-                  <ul class="clearfix">
-                    <li class="card-item"><button><i class="pe-7s-like"></i></button></li>
-                    <li class="card-item"><button><i class="pe-7s-shuffle"></i></button></li>
-                    <li class="card-item"><button><i class="pe-7s-clock"></i></button></li>
-                  </ul>
-                  <button class="card-button"><i class="pe-7s-cart"></i>add to card</button>
-                </div>
+              <div class="product-list-overlay">
+                <ul class="card-list clearfix">
+                  <li class="card-item">
+                    <a class="card-icon-link" href="#"><span class="pe-7s-like link-icon"></span></a>
+                    <span class="visually-hidden">like</span>
+                  </li>
+                  <li class="card-item">
+                    <a class="card-icon-link" href="#"><span class="pe-7s-shuffle link-icon"></span></a>
+                    <span class="visually-hidden">shuffle</span>
+                  </li>
+                  <li class="card-item">
+                    <a class="card-icon-link" href="#"><span class="pe-7s-clock link-icon"></span></a>
+                    <span class="visually-hidden">clock</span>
+                  </li>
+                  <li class="card-item card-basket">
+                    <a class="card-icon-link" href="#"><span class="pe-7s-cart link-icon"></span>add to card</a>
+                    <span class="visually-hidden">cart</span>
+                  </li>
+                </ul>
               </div>
-            <div class="product-box-descr clearfix">
-              <p class="product-name">Blue Tshirt</p>
-              <p class="product-prise">26$</p>
-            </div>
+              <div class="product-box-descr clearfix">
+                <p class="product-name">Blue Tshirt</p>
+                <p class="product-prise">26$</p>
+              </div>
           </li>
           <li class="collection-item">
               <img src="img/category-1.jpg" alt="Blue Tshirt" width="255" height="322">
-              <div class="card-bgr">
-                <div class="card-block">
-                  <ul class="clearfix">
-                    <li class="card-item"><button><i class="pe-7s-like"></i></button></li>
-                    <li class="card-item"><button><i class="pe-7s-shuffle"></i></button></li>
-                    <li class="card-item"><button><i class="pe-7s-clock"></i></button></li>
-                  </ul>
-                  <button class="card-button"><i class="pe-7s-cart"></i>add to card</button>
-                </div>
+              <div class="product-list-overlay">
+                <ul class="card-list clearfix">
+                  <li class="card-item">
+                    <a class="card-icon-link" href="#"><span class="pe-7s-like link-icon"></span></a>
+                    <span class="visually-hidden">like</span>
+                  </li>
+                  <li class="card-item">
+                    <a class="card-icon-link" href="#"><span class="pe-7s-shuffle link-icon"></span></a>
+                    <span class="visually-hidden">shuffle</span>
+                  </li>
+                  <li class="card-item">
+                    <a class="card-icon-link" href="#"><span class="pe-7s-clock link-icon"></span></a>
+                    <span class="visually-hidden">clock</span>
+                  </li>
+                  <li class="card-item card-basket">
+                    <a class="card-icon-link" href="#"><span class="pe-7s-cart link-icon"></span>add to card</a>
+                    <span class="visually-hidden">cart</span>
+                  </li>
+                </ul>
               </div>           
-            <div class="product-box-descr clearfix">
-              <p class="product-name">Woman shirt</p>
-              <p class="product-prise">26$</p>
-            </div>
+              <div class="product-box-descr clearfix">
+                <p class="product-name">Woman shirt</p>
+                <p class="product-prise">26$</p>
+              </div>
           </li>
           <li class="collection-item">
               <img src="img/category-3.jpg" alt="Blue Tshirt" width="255" height="322">
-                <div class="card-bgr">
-                  <div class="card-block">
-                    <ul class="clearfix">
-                      <li class="card-item"><button><i class="pe-7s-like"></i></button></li>
-                      <li class="card-item"><button><i class="pe-7s-shuffle"></i></button></li>
-                      <li class="card-item"><button><i class="pe-7s-clock"></i></button></li>
-                    </ul>
-                    <button class="card-button"><i class="pe-7s-cart"></i>add to card</button>
-                  </div>
-                </div>           
+              <div class="product-list-overlay">
+                <ul class="card-list clearfix">
+                  <li class="card-item">
+                    <a class="card-icon-link" href="#"><span class="pe-7s-like link-icon"></span></a>
+                    <span class="visually-hidden">like</span>
+                  </li>
+                  <li class="card-item">
+                    <a class="card-icon-link" href="#"><span class="pe-7s-shuffle link-icon"></span></a>
+                    <span class="visually-hidden">shuffle</span>
+                  </li>
+                  <li class="card-item">
+                    <a class="card-icon-link" href="#"><span class="pe-7s-clock link-icon"></span></a>
+                    <span class="visually-hidden">clock</span>
+                  </li>
+                  <li class="card-item card-basket">
+                    <a class="card-icon-link" href="#"><span class="pe-7s-cart link-icon"></span>add to card</a>
+                    <span class="visually-hidden">cart</span>
+                  </li>
+                </ul>
+              </div>           
               <div class="product-box-descr clearfix">
                 <p class="product-name">Yellow Tshirt</p>
                 <p class="product-prise">26$</p>
@@ -126,28 +161,39 @@
           </li>
           <li class="collection-item">
               <img src="img/category-4.jpg" alt="Blue Tshirt" width="255" height="322">
-                <div class="card-bgr">
-                  <div class="card-block">
-                    <ul class="clearfix">
-                      <li class="card-item"><button class="card-icon-button"><i class="pe-7s-like"></i></button></li>
-                      <li class="card-item"><button class="card-icon-button"><i class="pe-7s-shuffle"></i></button></li>
-                      <li class="card-item"><button class="card-icon-button"><i class="pe-7s-clock"></i></button></li>
-                    </ul>
-                    <button class="card-button"><i class="pe-7s-cart"></i>add to card</button>
-                  </div>
-                </div>
+              <div class="product-list-overlay">
+                  <ul class="card-list clearfix">
+                    <li class="card-item">
+                      <a class="card-icon-link" href="#"><span class="pe-7s-like link-icon"></span></a>
+                      <span class="visually-hidden">like</span>
+                    </li>
+                    <li class="card-item">
+                      <a class="card-icon-link" href="#"><span class="pe-7s-shuffle link-icon"></span></a>
+                      <span class="visually-hidden">shuffle</span>
+                    </li>
+                    <li class="card-item">
+                      <a class="card-icon-link" href="#"><span class="pe-7s-clock link-icon"></span></a>
+                      <span class="visually-hidden">clock</span>
+                    </li>
+                    <li class="card-item card-basket">
+                      <a class="card-icon-link" href="#"><span class="pe-7s-cart link-icon"></span>add to card</a>
+                      <span class="visually-hidden">cart</span>
+                    </li>
+                  </ul>
+              </div>
               <div class="product-box-descr clearfix">           
                 <p class="product-name">Cool lingerie</p>
                 <p class="product-prise">56$</p>
-             </div>
+              </div>
           </li>
         </ul>
       </div>
       </section>
     </main>
     <footer class="footer">
-      <p class="footer-text">All Rights Reserved <span class="copy">&#xa9</span> Dokan | Designed <span class="graph">ThemenGraph</span></p>
+      <div class="container">
+        <p class="footer-text">All Rights Reserved <span class="copy">&#xa9;</span> Dokan | Designed <span class="graph">ThemenGraph</span></p>
+      </div>
     </footer>
-  </div>
 </body>
 </html>

@@ -1,0 +1,133 @@
+html{
+  box-sizing: border-box
+}
+*,
+*::before, 
+*::after{
+  box-sizing: inherit;
+}
+body{
+  font-family:"Roboto", Arial, sans-serif;
+}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.page-header{
+  margin-top: 32px;
+  margin-bottom: 127px;
+}
+.nav-block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-navigation{
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 485px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-item-link{
+  display: block;
+  text-decoration: none;
+  font:400 14/17 "Montserrat";
+  text-transform: uppercase;
+  color:  #222222;
+  padding: 15px 20px;
+  transition: all 200ms linear;
+}
+.nav-item:last-child .nav-item-link{
+  padding-right: 0;
+}
+.nav-item-link:hover,
+.nav-item-link:focus{
+  color: #fed136;
+}
+
+                                        /* SERVICE START*/
+.service{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  margin-bottom: 100px;
+  text-align: center;
+}                                       
+.service-descr,
+.team-descr{
+  font: 400 24px/29px "DroidSerif", cursive;
+  margin: 0;
+  margin-bottom: 14px;
+}
+.servise-title,
+.team-title{
+  display: inline-block;
+  font: 700 30px/36px 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+.service-list{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.service-list-item:not(:last-child){
+  margin-right: 35px;
+}
+.service-list-item{
+  width: 290px;
+  height: 125px;
+  background-color: #cee;
+}
+
+.service-list-item:not(:nth-last-child(-n+3)){
+  margin-bottom: 99px;
+}
+.service-item-caption,.team-list-name{
+  font: 400 14px/17px "Montserrat", sans-serif;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+}
+.service-item-text,
+.team-text{
+  font: 400 15px/24px "Roboto", sans-serif;
+  color: #999999;
+  margin: 0;
+}
+                                                /* SERVICE END*/
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.container{
+ width: 940px;
+ margin: 0 auto;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

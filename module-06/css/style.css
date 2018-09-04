@@ -183,6 +183,7 @@ img{
   margin-bottom: 28px;
 }
 .team-img{
+  position: absolute;
   transition: all 200ms linear;
 }
 .socials-dlock{

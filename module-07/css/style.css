@@ -8,6 +8,14 @@
        url('../fonts/Montserrat/montserrat-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
 }
 @font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/Montserrat/montserrat-v12-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Montserrat/montserrat-v12-latin-700.woff') format('woff'), /* Modern Browsers */
+}
+@font-face {
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 400;
@@ -15,6 +23,11 @@
        url('../fonts/RobotoSlab/roboto-slab-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/RobotoSlab/roboto-slab-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
 }
+@font-face{
+  font-family: 'Wisdom';
+  src: url(../fonts/Wisdom-Script-AJ.otf);
+}
+
 html{
   box-sizing: border-box
 }
@@ -25,6 +38,7 @@ html{
 }
 body{
   font-family: 'Montserrat', sans-serif;
+  color: #bbbbbb;
 }
 img{
   display: block;
@@ -32,18 +46,26 @@ img{
   height: auto;
 }
 .page-header{
-  margin-top: 32px;
-  margin-bottom: 127px;
+  margin-bottom: 77px;
 }
+/* .site-logo{
+  font-family: "Wisdom", sans-serif;
+  font-size: 26px;
+  line-height: 41px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fed136;
+} */
 .nav-block{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 25px;
 }
 .site-navigation{
   display: flex;
   justify-content: space-between;
-  flex: 0 0 485px;
+  /* flex: 0 0 485px; */
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -51,10 +73,12 @@ img{
 .nav-item-link{
   display: block;
   text-decoration: none;
-  font:400 14/17 "Montserrat Regular";
-  text-transform: uppercase;
+  /* font: 400 14px/41px "Montserrat", sans-serif; */
+  font-size: 14px;
+  line-height: 41px;
   color:  #222222;
   padding: 15px 20px;
+  text-transform: uppercase;
   transition: all 200ms linear;
 }
 .nav-item:last-child .nav-item-link{
@@ -71,26 +95,34 @@ img{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }                                       
 .service-descr,
-.team-descr{
+.contact-descr{
   font-family:"Roboto Slab", serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
+  /* font-weight: 400; */
+  font-size: 16px;
+  line-height: 19px;
+  font-style: italic;
+  color: #777777;
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 80px;
 }
 .servise-title,
-.team-title{
+.contact-title{
   display: inline-block;
-  font: 700 30px/36px 'Montserrat Regular', sans-serif;
+  /* font: 700 40px/48px 'Montserrat', sans-serif; */
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
   text-transform: uppercase;
+  color: #222222;
   margin: 0;
+  margin-bottom: 13px;  
 }
 .service-list{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
   margin: 0;
@@ -101,7 +133,6 @@ img{
 }
 .service-list-item{
   width: 290px;
-  background-color: #cee;
 }
 .service-list-item::before{
   display: block;
@@ -113,7 +144,7 @@ img{
   border: 4px solid #fed136;
   background-position: center;
   border-radius: 50%;
-  margin-bottom: 26px;
+  margin-bottom: 15px;
 }
 .icon-backet::before{
   background-image: url(../img/Icon-Basket.png);
@@ -124,30 +155,107 @@ img{
 .icon-locked::before{
   background-image: url(../img/Icon-Locked.png);
 }
-.service-list-item:not(:nth-last-child(-n+3)){
-  margin-bottom: 99px;
-}
-.service-item-caption,.team-list-name{
-  font: 400 14px/17px "Montserrat Regular", sans-serif;
-  color: #333333;
-  text-transform: uppercase;
+.service-item-caption{
+  /* font: 700 18px/45px "Montserrat", sans-serif; */
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 45px;
+  color: #222222;
   margin: 0;
 }
-.service-item-text,
-.team-text{
-  font: 400 15px/24px "Roboto Slab", serif;
+.service-item-text{
+  /* font: 400 14px/17px "Roboto Slab", serif;
+  font-weight: 400; */
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  line-height: 17px;
   color: #999999;
   margin: 0;
 }
                                                 /* SERVICE END*/
+                                                /* CONTACT START */
 .contact{
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  /* height: 676px; */
+  padding: 101px 0 115px 0;
+  background-image: url(../img/Map-Image.jpg);
+}
+.contact-title{
+  color: #fff;
+}
+.contact-descr{
+  margin-bottom: 76px;
+}
+.contact-form{
+  /* font: 700 14px/17px "Montserrat", sans-serif; */
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+.form-block{
+  display: flex;
+  margin-bottom: 29px;
 }
 
-
+.form-block input{
+  width: 454px;
+  height: 48px;
+  margin:0 28px 32px 0;
+  padding: 0;
+  padding-left: 22px;
+  outline: none; 
+  border: 0;
+  border-radius: 3px;
+  font:italic 500 14px/17px "Roboto Slab", serif; 
+   color: #777777;
+}
+input:nth-last-child(1){
+  margin-bottom: 0;
+}
+input::placeholder, .form-massege::placeholder{
+  font: 700 14px/17px "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #bbbbbb;
+}
+input:valid, .form-massege:valid{
+  outline: 2px solid green;
+}
+input:invalid, .form-massege:invalid{
+  outline:2px solid red;
+}
+input:focus, .form-massege:focus{
+  outline: none;
+}
+.form-massege{
+  width: 455px;
+  height: 208px;
+  padding: 17px 22px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  resize: none;
+  font:italic 500 14px/17px "Roboto Slab", serif; 
+  color: #777777;
+}
+.form-button{
+  width: 240px;
+  height: 65px;
+  border: none;
+  padding: 0;
+  background-color: #fed136;
+  color: #fff;
+  text-transform: uppercase;
+  /* font: 700 18px/22px "Montserrat", sans-serif; */
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+}
+                                                       /* CONTACT END */
 .container{
  width: 940px;
  margin: 0 auto;

@@ -1,0 +1,114 @@
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/Roboto/roboto-v18-latin-300.woff2') format('woff2'), 
+       url('../fonts/Roboto/roboto-v18-latin-300.woff') format('woff'),
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Montserrat/montserrat-v12-latin-700.woff2') format('woff2'), 
+       url('../fonts/Montserrat/montserrat-v12-latin-700.woff') format('woff'),
+}
+
+html{
+  box-sizing: border-box
+}
+*,
+*::before, 
+*::after{
+  box-sizing: inherit;
+}
+body{
+  font: 700 18px/1.2"Montserrat", sans-serif;
+  margin: 0;
+}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.nav-list{
+  margin: 0;
+  padding: 0;
+}
+.header-nav{
+  margin-bottom: 121px;
+}
+.nav-link{
+  display: inline-block;
+}
+.page-header{
+  height: 542px;
+  background-image: url(../img/team.jpg);
+  text-align: center;
+  color: #ffffff;
+  padding-top: 30px;
+}
+.header-link{
+  font:700 14px/1.2 "Montserrat", sans-serif;
+  padding: 8px 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+}
+.header-link:hover,
+.header-link:focus{
+  border: 2px solid #ffffff;
+  border-radius: 18px;
+}
+.header-descr{
+  font:700 20px/1.2 "Montserrat";
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 26px;
+}
+.header-caotion{
+  font:700 30px/1.2 "Montserrat";
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 7px;
+}
+.header-text{
+  width: 218px;
+  font: 300 18px/1.2 "Roboto";
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+.Find-partner-link{
+  display: inline-block;
+  font:700 14px/1.2 "Montserrat";
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 48px;
+  background-color: #ff4e50;
+  border-radius: 21px;
+}
+
+                                                    /* CONTACT END */
+.container{
+ max-width: 320px;
+ min-height: 100vh;
+ margin: 0 auto;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

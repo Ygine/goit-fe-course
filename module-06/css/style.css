@@ -192,6 +192,7 @@ img {
 .team-img {
   position: absolute;
   transition: all 200ms linear;
+  /* pointer-events: none; */
 }
 .socials-dlock {
   position: absolute;
@@ -256,7 +257,6 @@ img {
   position: absolute;
   margin-top: -10px;
   margin-left: -10px;
-  transition: all 200ms linear;
 }
 .team-list-name {
   margin-bottom: 10px;
@@ -307,7 +307,6 @@ img {
 }
 .form-button:hover,
 .form-button:focus {
-  transition: all 200ms linear;
   color: #95e1d3;
   background-color: #fff;
   border: 1px solid #95e1d3;

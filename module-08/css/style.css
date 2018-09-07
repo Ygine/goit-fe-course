@@ -12,7 +12,6 @@
   src: url('../fonts/Montserrat/montserrat-v12-latin-700.woff2') format('woff2'),
     url('../fonts/Montserrat/montserrat-v12-latin-700.woff') format('woff');
 }
-
 html {
   box-sizing: border-box;
 }
@@ -22,7 +21,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  font: 700 18px/1.2 'Montserrat', 'Roboto', sans-serif;
+  font: 700 14px/1.2 'Montserrat', 'Roboto', sans-serif;
   margin: 0;
 }
 img {
@@ -45,44 +44,45 @@ img {
   padding-top: 30px;
   margin-bottom: 64px;
 }
-.nav-list {
+.header-nav {
+  display: flex;
+  flex-flow: column-reverse wrap;
+  justify-content: space-between;
+  height: 163px;
+}
+.page-header {
+  margin-bottom: 26px;
+}
+.site-logo {
+  display: block;
+  font: 20px/1.2 'Montserrat';
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+}
+.site-navigation {
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.page-header {
-  margin-bottom: 121px;
-}
-.nav-list-item {
-  display: inline-block;
-}
-.header-link {
-  font: 700 14px/1.2 'Montserrat';
+.nav-link {
+  display: block;
   padding: 8px 10px;
   border: 2px solid transparent;
   cursor: pointer;
   color: #ffffff;
   text-decoration: none;
 }
-.header-link:hover,
-.header-link:focus {
+.nav-link:hover,
+.nav-link:focus {
   border: 2px solid #ffffff;
   border-radius: 18px;
 }
-.site-logo {
-  display: inline-block;
-  font: 700 20px/1.2 'Montserrat';
-  text-transform: uppercase;
-  color: #fff;
-  text-decoration: none;
-  margin: 0;
-  margin-bottom: 26px;
-}
-.logo-nav {
-  display: none;
-}
 .header-title {
-  font: 700 30px/1.2 'Montserrat';
+  font: 30px/1.2 'Montserrat';
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 7px;
@@ -95,7 +95,7 @@ img {
 }
 .Find-partner-link {
   display: inline-block;
-  font: 700 14px/1.2 'Montserrat';
+  /* font: 14px/1.2 'Montserrat'; */
   color: #ffffff;
   text-decoration: none;
   padding: 12px 48px;
@@ -117,14 +117,11 @@ img {
 }
 .partner-title {
   margin: 0;
-  font: 700 22px/1.2 'Montserrat';
+  font: 22px/1.2 'Montserrat';
   color: #333333;
   margin-bottom: 15px;
 }
 .partner-list {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -133,6 +130,7 @@ img {
 .partner-list-item {
   width: 220px;
   padding: 0;
+  margin: 0 auto;
 }
 .partner-img {
   margin: 0 auto;
@@ -155,9 +153,9 @@ img {
   background-position: center;
   border: 3px solid #ffffff;
   border-radius: 50%;
+  transition: all 1s linear;
 }
 .img-icon:hover::after {
-  transition: all 1s linear;
   transform: rotate(360deg);
 }
 .tv-icon::after {
@@ -177,7 +175,6 @@ img {
   background-color: #4e73db;
 }
 .partner-name {
-  font: 700 14px/1.2 'Montserrat';
   color: #333333;
   margin: 0;
   margin-bottom: 13px;
@@ -188,7 +185,6 @@ img {
 }
 .other-partner-link {
   display: inline-block;
-  font: 700 14px/1.2 'Montserrat';
   color: #ff4e50;
   text-decoration: none;
   padding: 11px 48px;
@@ -199,7 +195,6 @@ img {
 }
 .other-partner-link:hover,
 .other-partner-link:focus {
-  transition: all 200ms linear;
   border: 2px solid transparent;
   color: #fff;
   background-color: #ff4e50;
@@ -221,26 +216,28 @@ img {
   }
   .header-section {
     width: 748px;
+    height: 700px;
     background-image: url(../img/team2.png);
     background-color: rgb(26, 25, 21);
-    height: 700px;
     padding-top: 46px;
     margin-bottom: 67px;
   }
+  .header-nav {
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+  }
   .page-header {
-    margin-bottom: 145px;
+    margin-bottom: 134px;
   }
   .header-nav {
     display: flex;
     justify-content: space-between;
     padding: 0 35px;
   }
-  .logo-nav {
+  .site-logo {
     display: block;
     margin: 0;
-  }
-  .logo-head {
-    display: none;
   }
   .header-title {
     width: 503px;
@@ -264,12 +261,16 @@ img {
     margin-bottom: 29px;
   }
   .partner-list {
-    width: 490px;
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: space-between;
+    width: 490px;
     margin: 0 auto;
     margin-bottom: 40px;
+  }
+  .partner-list-item {
+    margin: 0;
   }
   .partner-title {
     margin-bottom: 33px;

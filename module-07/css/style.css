@@ -253,14 +253,21 @@ input:focus,
 .form-button {
   min-width: 240px;
   border: none;
-  padding: 21px 40px;
+  padding: 20px 40px;
   background-color: #fed136;
   color: #fff;
+  border: 2px solid transparent;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   cursor: pointer;
+  transition: background-color, border, color 250ms linear;
+}
+.form-button:hover {
+  border: 2px solid #fed136;
+  color: #fed136;
+  background-color: #fff;
 }
 /* CONTACT END */
 

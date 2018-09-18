@@ -34,11 +34,11 @@ img {
   margin: 0 auto;
 }
 .header-section {
+  width: 320px;
   min-height: 540px;
   margin: 0 auto;
-  background-image: url(../img/team3.png);
-  background-size: cover;
-  background-position: 50% 50%;
+  background-image: url(../img/team1.png);
+  background-repeat: no-repeat;
   background-color: rgb(26, 25, 21);
   text-align: center;
   color: #ffffff;
@@ -56,7 +56,7 @@ img {
 }
 .site-logo {
   display: block;
-  font: 20px/1.2 'Montserrat';
+  font: 20px 'Montserrat';
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
@@ -90,24 +90,37 @@ img {
 }
 .header-subtitle {
   width: 218px;
-  font: 300 18px/1.2 'Roboto';
+  font: 300 18px 'Roboto';
   margin: 0 auto;
   margin-bottom: 16px;
 }
 .Find-partner-link {
-  display: inline-block;
   color: #ffffff;
+  background-color: #ff4e50;
+}
+.Find-partner-link,
+.other-partner-link {
+  display: inline-block;
   text-decoration: none;
   padding: 12px 48px;
-  background-color: #ff4e50;
   border-radius: 21px;
   transition: all 200ms linear;
 }
 .Find-partner-link:hover,
 .Find-partner-link:focus {
-  transition: all 200ms linear;
   background-color: rgba(255, 255, 255, 0.8);
   color: #ff4e50;
+}
+.other-partner-link:hover,
+.other-partner-link:focus {
+  border: 2px solid transparent;
+  color: #fff;
+  background-color: #ff4e50;
+}
+.other-partner-link {
+  color: #ff4e50;
+  border: 2px solid #ff4e50;
+  background-color: #fff;
 }
 
 /* PARTNER SECTION */
@@ -183,22 +196,6 @@ img {
   margin: 0;
   font: 300 14px/1.2 'Roboto';
 }
-.other-partner-link {
-  display: inline-block;
-  color: #ff4e50;
-  text-decoration: none;
-  padding: 11px 48px;
-  border: 2px solid #ff4e50;
-  background-color: #fff;
-  border-radius: 21px;
-  transition: all 200ms linear;
-}
-.other-partner-link:hover,
-.other-partner-link:focus {
-  border: 2px solid transparent;
-  color: #fff;
-  background-color: #ff4e50;
-}
 
 @media (max-width: 747px) {
   .partner-list-item:not(:last-child) {
@@ -215,7 +212,9 @@ img {
     width: 748px;
   }
   .header-section {
+    width: 748px;
     min-height: 700px;
+    background-image: url(../img/team2.png);
     padding-top: 46px;
     margin-bottom: 67px;
   }
@@ -280,6 +279,12 @@ img {
 @media (min-width: 942px) {
   .container {
     width: 942px;
+  }
+  .header-section {
+    width: auto;
+    background-image: url(../img/team3.png);
+    background-size: cover;
+    background-position: 50% 50%;
   }
   .header-nav {
     padding: 0;

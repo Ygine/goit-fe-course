@@ -14,6 +14,7 @@
 }
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 *,
 *::before,
@@ -21,7 +22,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  font: 700 14px/1.2 'Montserrat', 'Roboto', sans-serif;
+  font: 700 1.4rem/1.2 'Montserrat', 'Roboto', sans-serif;
   margin: 0;
 }
 img {
@@ -30,11 +31,11 @@ img {
   height: auto;
 }
 .container {
-  width: 320px;
-  margin: 0 auto;
+  min-width: 32rem;
+  max-width: 94.2rem;
 }
 .header-section {
-  min-height: 540px;
+  min-height: 54rem;
   margin: 0 auto;
   background-image: url(../img/team3.png);
   background-size: cover;
@@ -42,8 +43,8 @@ img {
   background-color: rgb(26, 25, 21);
   text-align: center;
   color: #ffffff;
-  padding-top: 30px;
-  margin-bottom: 64px;
+  padding-top: 3rem;
+  margin-bottom: 6.4rem;
 }
 .header-nav {
   display: flex;
@@ -128,7 +129,7 @@ img {
   margin-bottom: 26px;
 }
 .partner-list-item {
-  width: 230px;
+  width: 220px;
   padding: 0;
   margin: 0 auto;
 }
@@ -210,7 +211,7 @@ img {
     margin-bottom: 58px;
   }
 }
-@media (min-width: 748px) {
+@media (min-width: 768px) {
   .container {
     width: 748px;
   }

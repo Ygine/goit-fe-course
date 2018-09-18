@@ -79,6 +79,7 @@ img {
 .site-navigation {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -102,21 +103,20 @@ img {
 
 /* SERVICE START*/
 .service {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   padding-bottom: 117px;
 }
-.service-descr,
-.contact-descr {
+.servise-header,
+.contact-header {
+  margin-bottom: 80px;
+}
+.subtitle {
   font-family: "Roboto Slab", serif;
   font-size: 16px;
   line-height: 19px;
   font-style: italic;
   color: #777777;
   margin: 0;
-  margin-bottom: 80px;
 }
 .servise-title,
 .contact-title {
@@ -137,9 +137,9 @@ img {
   margin: 0;
   padding: 0;
 }
-.service-list-item:not(:last-child) {
+/* .service-list-item:not(:last-child) {
   margin-right: 35px;
-}
+} */
 .service-list-item {
   width: 290px;
 }
@@ -193,9 +193,6 @@ img {
 }
 .contact-title {
   color: #fff;
-}
-.contact-descr {
-  margin-bottom: 77px;
 }
 .contact-form {
   font-weight: 700;

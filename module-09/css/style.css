@@ -14,7 +14,6 @@
 }
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
 }
 *,
 *::before,
@@ -22,29 +21,24 @@ html {
   box-sizing: inherit;
 }
 body {
-  font: 700 1.4rem/1.2 'Montserrat', 'Roboto', sans-serif;
-  margin: 0;
+  font: 700 14px/1.2 'Montserrat', 'Roboto', sans-serif;
 }
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-.container {
-  min-width: 32rem;
-  max-width: 94.2rem;
-}
 .header-section {
-  min-height: 54rem;
+  width: 320px;
+  min-height: 540px;
   margin: 0 auto;
-  background-image: url(../img/team3.png);
-  background-size: cover;
-  background-position: 50% 50%;
+  background-image: url(../img/team1.png);
+  background-repeat: no-repeat;
   background-color: rgb(26, 25, 21);
   text-align: center;
   color: #ffffff;
-  padding-top: 3rem;
-  margin-bottom: 6.4rem;
+  padding-top: 30px;
+  margin-bottom: 64px;
 }
 .header-nav {
   display: flex;
@@ -57,7 +51,7 @@ img {
 }
 .site-logo {
   display: block;
-  font: 20px/1.2 'Montserrat';
+  font: 20px 'Montserrat';
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
@@ -86,29 +80,44 @@ img {
 .header-title {
   font: 30px/1.2 'Montserrat';
   text-transform: uppercase;
+  letter-spacing: -0.1px;
   margin: 0;
   margin-bottom: 7px;
 }
+
 .header-subtitle {
-  width: 218px;
-  font: 300 18px/1.2 'Roboto';
+  font: 300 18px 'Roboto';
   margin: 0 auto;
   margin-bottom: 16px;
 }
+
 .Find-partner-link {
-  display: inline-block;
   color: #ffffff;
-  text-decoration: none;
-  padding: 12px 48px;
   background-color: #ff4e50;
+}
+.Find-partner-link,
+.other-partner-link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 22px;
   border-radius: 21px;
   transition: all 200ms linear;
 }
 .Find-partner-link:hover,
 .Find-partner-link:focus {
-  transition: all 200ms linear;
   background-color: rgba(255, 255, 255, 0.8);
   color: #ff4e50;
+}
+.other-partner-link:hover,
+.other-partner-link:focus {
+  border: 2px solid transparent;
+  color: #fff;
+  background-color: #ff4e50;
+}
+.other-partner-link {
+  color: #ff4e50;
+  border: 2px solid #ff4e50;
+  background-color: #fff;
 }
 
 /* PARTNER SECTION */
@@ -182,40 +191,23 @@ img {
 }
 .partner-descr {
   margin: 0;
-  font: 300 14px/1.2 'Roboto';
-}
-.other-partner-link {
-  display: inline-block;
-  color: #ff4e50;
-  text-decoration: none;
-  padding: 11px 48px;
-  border: 2px solid #ff4e50;
-  background-color: #fff;
-  border-radius: 21px;
-  transition: all 200ms linear;
-}
-.other-partner-link:hover,
-.other-partner-link:focus {
-  border: 2px solid transparent;
-  color: #fff;
-  background-color: #ff4e50;
+  font: 300 14px 'Roboto';
 }
 
-@media (max-width: 747px) {
-  .partner-list-item:not(:last-child) {
+@media (max-width: 767px) {
+  .partner-item-row [class*='col-']:not(:last-child) {
     margin-bottom: 27px;
   }
 }
-@media (min-width: 748px) and (max-width: 941px) {
-  .partner-list-item:not(:nth-last-child(-n + 2)) {
+@media (min-width: 767px) and (max-width: 941.9px) {
+  .partner-item-row [class*='col-']:not(:nth-last-child(-n + 2)) {
     margin-bottom: 58px;
   }
 }
 @media (min-width: 768px) {
-  .container {
-    width: 748px;
-  }
   .header-section {
+    width: 768px;
+    background-image: url(../img/team2.png);
     min-height: 700px;
     padding-top: 46px;
     margin-bottom: 67px;
@@ -238,55 +230,32 @@ img {
     margin: 0;
   }
   .header-title {
-    width: 503px;
     font-size: 52px;
     margin: 0 auto;
     margin-bottom: 25px;
   }
   .header-subtitle {
-    width: 400px;
     font-size: 24px;
     margin-bottom: 36px;
-  }
-  .Find-partner-link,
-  .other-partner-link {
-    padding: 11px 18px;
   }
   .partner {
     padding-bottom: 40px;
   }
   .partner-title {
-    margin-bottom: 29px;
-  }
-  .partner-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 490px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-  }
-  .partner-list-item {
-    margin: 0;
-  }
-  .partner-title {
     margin-bottom: 33px;
-  }
-  .other-partner-link {
-    display: inline-block;
   }
 }
 
 @media (min-width: 942px) {
-  .container {
-    width: 942px;
+  .header-section {
+    width: auto;
+    background-image: url(../img/team3.png);
+    background-size: cover;
+    background-position: 50% 50%;
   }
+
   .header-nav {
     padding: 0;
-  }
-  .partner-list {
-    width: 942px;
   }
 }
 

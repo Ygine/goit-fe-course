@@ -39,6 +39,8 @@ img {
   margin: 0 auto;
   background-image: url(../img/team1.png);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-color: rgb(26, 25, 21);
   text-align: center;
   color: #ffffff;
@@ -102,7 +104,7 @@ img {
 .other-partner-link {
   display: inline-block;
   text-decoration: none;
-  padding: 12px 48px;
+  padding: 12px 22px;
   border-radius: 21px;
   transition: all 200ms linear;
 }
@@ -197,6 +199,13 @@ img {
   font: 300 14px/1.2 'Roboto';
 }
 
+@media (min-width: 320px) and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .header-section {
+    background-image: url(../img/team-1@2x.png);
+  }
+}
+
 @media (max-width: 747px) {
   .partner-list-item:not(:last-child) {
     margin-bottom: 27px;
@@ -207,6 +216,7 @@ img {
     margin-bottom: 58px;
   }
 }
+
 @media (min-width: 748px) {
   .container {
     width: 748px;
@@ -276,6 +286,13 @@ img {
   }
 }
 
+@media (min-width: 748px) and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .header-section {
+    background-image: url(../img/team-2@2x.png);
+  }
+}
+
 @media (min-width: 942px) {
   .container {
     width: 942px;
@@ -291,6 +308,13 @@ img {
   }
   .partner-list {
     width: 942px;
+  }
+}
+
+@media (min-width: 942px) and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .header-section {
+    background-image: url(../img/team-3@2x.png);
   }
 }
 

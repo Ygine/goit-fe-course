@@ -284,12 +284,12 @@ img {
   .other-partner-link {
     display: inline-block;
   }
-}
 
-@media (min-width: 748px) and (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .header-section {
-    background-image: url(../img/team-2@2x.png);
+  @media (min-width: 748px) and (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .header-section {
+      background-image: url(../img/team-2@2x.png);
+    }
   }
 }
 
@@ -309,12 +309,12 @@ img {
   .partner-list {
     width: 942px;
   }
-}
 
-@media (min-width: 942px) and (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .header-section {
-    background-image: url(../img/team-3@2x.png);
+  @media (min-width: 942px) and (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .header-section {
+      background-image: url(../img/team-3@2x.png);
+    }
   }
 }
 

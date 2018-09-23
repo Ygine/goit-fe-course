@@ -33,11 +33,10 @@ img {
   width: 320px;
   margin: 0 auto;
 }
-.header-section {
-  width: 320px;
+.page-header {
   min-height: 540px;
   margin: 0 auto;
-  background-image: url(../img/team1.png);
+  background-image: url(../img/team3.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -45,16 +44,12 @@ img {
   text-align: center;
   color: #ffffff;
   padding-top: 30px;
-  margin-bottom: 64px;
 }
 .header-nav {
   display: flex;
   flex-flow: column-reverse wrap;
   justify-content: space-between;
   height: 163px;
-}
-.page-header {
-  margin-bottom: 26px;
 }
 .site-logo {
   display: block;
@@ -96,11 +91,11 @@ img {
   margin: 0 auto;
   margin-bottom: 16px;
 }
-.Find-partner-link {
+.find-partner-link {
   color: #ffffff;
   background-color: #ff4e50;
 }
-.Find-partner-link,
+.find-partner-link,
 .other-partner-link {
   display: inline-block;
   text-decoration: none;
@@ -108,8 +103,8 @@ img {
   border-radius: 21px;
   transition: all 200ms linear;
 }
-.Find-partner-link:hover,
-.Find-partner-link:focus {
+.find-partner-link:hover,
+.find-partner-link:focus {
   background-color: rgba(255, 255, 255, 0.8);
   color: #ff4e50;
 }
@@ -128,6 +123,7 @@ img {
 /* PARTNER SECTION */
 .partner {
   text-align: center;
+  padding-top: 64px;
   padding-bottom: 56px;
 }
 .partner-title {
@@ -199,16 +195,18 @@ img {
   font: 300 14px/1.2 'Roboto';
 }
 
-@media (min-width: 320px) and (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .header-section {
-    background-image: url(../img/team-1@2x.png);
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .page-header {
+    background-image: url(../img/team-3@2x.png);
   }
 }
 
 @media (max-width: 747px) {
   .partner-list-item:not(:last-child) {
     margin-bottom: 27px;
+  }
+  .header-nav {
+    margin-bottom: 26px;
   }
 }
 @media (min-width: 748px) and (max-width: 941px) {
@@ -221,29 +219,19 @@ img {
   .container {
     width: 748px;
   }
-  .header-section {
-    width: 748px;
+  .page-header {
     min-height: 700px;
-    background-image: url(../img/team2.png);
     padding-top: 46px;
-    margin-bottom: 67px;
   }
   .header-nav {
     flex-direction: row;
     align-items: center;
     height: auto;
-  }
-  .page-header {
-    margin-bottom: 134px;
-  }
-  .header-nav {
-    display: flex;
-    justify-content: space-between;
     padding: 0 35px;
+    margin-bottom: 135px;
   }
   .site-logo {
     display: block;
-    margin: 0;
   }
   .header-title {
     width: 503px;
@@ -256,7 +244,7 @@ img {
     font-size: 24px;
     margin-bottom: 36px;
   }
-  .Find-partner-link,
+  .find-partner-link,
   .other-partner-link {
     padding: 11px 18px;
   }
@@ -284,37 +272,17 @@ img {
   .other-partner-link {
     display: inline-block;
   }
-
-  @media (min-width: 748px) and (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .header-section {
-      background-image: url(../img/team-2@2x.png);
-    }
-  }
 }
 
 @media (min-width: 942px) {
   .container {
     width: 942px;
   }
-  .header-section {
-    width: auto;
-    background-image: url(../img/team3.png);
-    background-size: cover;
-    background-position: 50% 50%;
-  }
   .header-nav {
     padding: 0;
   }
   .partner-list {
     width: 942px;
-  }
-
-  @media (min-width: 942px) and (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .header-section {
-      background-image: url(../img/team-3@2x.png);
-    }
   }
 }
 

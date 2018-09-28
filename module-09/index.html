@@ -6,111 +6,91 @@
   <meta name="author" content="Evhen Lysiuk">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="stylesheet" href="css/bootstrap-grid.css"> -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/bootstrap-grid.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Module-09</title>
 </head>
 
 <body>
-  <div class="wrapper">
-    <section class="header-section">
-      <div class="container">
-        <div class="row justify-content-center">
+  <header class="page-header">
+    <nav class="header-nav container">
+      <a class="site-logo" href="#">UrlaubsglÜck</a>
+      <ul class="site-navigation">
+        <li class="nav-list-item"><a class="nav-link" href="#">Log in</a></li>
+        <li class="nav-list-item"><a class="nav-link" href="#">Sign up</a></li>
+      </ul>
+    </nav>
 
-          <div class="col-12">
-            <header class="page-header">
-              <nav class="header-nav">
-                <a class="site-logo" href="#">UrlaubsglÜck</a>
-                <ul class="site-navigation">
-                  <li class="nav-list-item"><a class="nav-link" href="#">Login</a>
-                  </li>
-                  <li class="nav-list-item"><a class="nav-link" href="#">Sign up</a>
-                  </li>
-                </ul>
-              </nav>
-            </header>
-          </div>
-
-          <div class="col-12 col-md-9 col-lg-8">
-            <h1 class="header-title">Share your holiday dreams</h1>
-          </div>
-
-          <div class="col-12 col-md-8">
-            <p class="header-subtitle">And find the perfect partner to fullfill it</p>
-          </div>
-
-          <div class="col-12 col-md-5">
-            <a href="#" class="Find-partner-link">Find your holiday partner</a>
-          </div>
-
-        </div>
-      </div>
+    <section class="hero container">
+      <h2 class="header-title">Share your holiday dreams</h2>
+      <p class="header-subtitle">And find the perfect partner to fullfill it</p>
+      <a href="#" class="find-partner-link">Find your holiday partner</a>
     </section>
-  </div>
+  </header>
+
   <main>
-
+    <!-- <div class="div">
+      <svg width="100px" heght="100px">
+        <use href="img/symbol-defs.svg#icon-170"></use>
+      </svg>
+    </div> -->
     <section class="partner container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <h2 class="partner-title">Meet a partner for your best holiday</h2>
-        </div>
-
-        <div class="col-12 col-md-8 col-lg-12">
-          <ul class="partner-list">
-            <div class="row partner-item-row">
-
-              <div class="col-12 col-md-6 col-lg-3">
-                <li class="partner-list-item ">
-                  <div class="img-icon tv-icon">
-                    <img class="partner-img" src="img/Layer-6.jpg" alt="Bradley Hunter" width="122" height="122">
-                  </div>
-                  <p class="partner-name">Bradley Hunter</p>
-                  <p class="partner-descr">Based in Chicago. I love playing tennis and louf music</p>
-                </li>
-              </div>
-
-              <div class="col-12 col-md-6 col-lg-3">
-                <li class=" partner-list-item">
-                  <div class="img-icon cofe-icon">
-                    <img class="partner-img" src="img/Layer-7.jpg" alt="Heather Walker" width="122" height="122">
-                  </div>
-                  <p class="partner-name">Lucas Marsha</p>
-                  <p class="partner-descr">I'm a happy person that loves cats and climbing on mountains.</p>
-                </li>
-              </div>
-
-              <div class="col-12 col-md-6 col-lg-3">
-                <li class=" partner-list-item">
-                  <div class="img-icon chemist-icon">
-                    <img class="partner-img" src="img/Layer-8.jpg" alt="Lucas Marsha" width="122" height="122">
-                  </div>
-                  <p class="partner-name">Heather Walker</p>
-                  <p class="partner-descr">I get my inspiration from nature and objects around me. I have a passion to
-                    colours, typography and skateboards.</p>
-                </li>
-              </div>
-
-              <div class="col-12 col-md-6 col-lg-3">
-                <li class=" partner-list-item">
-                  <div class="img-icon airplane-icon">
-                    <img class="partner-img" src="img/Layer-9.jpg" alt="Bradley Hunter" width="122" height="122">
-                  </div>
-                  <p class="partner-name">Bradley Hunter</p>
-                  <p class="partner-descr">Based in Chicago. I love playing tennis and loud music.</p>
-                </li>
-              </div>
-
-            </div>
-          </ul>
-        </div>
-
-        <div class="col-12">
-          <a href="#" class="other-partner-link">See other partners</a>
-        </div>
-      </div>
+      <h2 class="partner-title">Meet a partner for your best holiday</h2>
+      <ul class="partner-list">
+        <li class="partner-list-item">
+          <div class="img-icon tv-icon">
+            <img srcset="img/Layer-6.jpg 122w,
+                             img/Layer-6@2x.jpg 244w,
+                             img/Layer-6@3x.jpg 366w"
+              sizes="122px" class="partner-img" src="img/Layer-6.jpg" alt="Bradley Hunter" width="122" height="122">
+          </div>
+          <p class="partner-name">Bradley Hunter</p>
+          <p class="partner-descr">Based in Chicago. I love playing tennis and loud
+            music.
+          </p>
+        </li>
+        <li class="partner-list-item">
+          <div class="img-icon cofe-icon">
+            <img srcset="img/Layer-7.jpg 122w,
+                              img/Layer-7@2x.jpg 244w,
+                              img/Layer-7@3x.jpg 366w"
+              sizes="122px" class="partner-img" src="img/Layer-7.jpg" alt="Heather Walker" width="122" height="122">
+          </div>
+          <p class="partner-name">Lucas Marsha</p>
+          <p class="partner-descr">I'm a happy person that loves cats and climbing
+            on mountains.</p>
+        </li>
+        <li class="partner-list-item">
+          <div class="img-icon chemist-icon">
+            <img srcset="img/Layer-8.jpg 122w,
+                             img/Layer-8@2x.jpg 244w,
+                             img/Layer-8@3x.jpg 366w"
+              sizes="122px" class="partner-img" src="img/Layer-8.jpg" alt="Lucas Marsha" width="122" height="122">
+          </div>
+          <p class="partner-name">Heather Walker</p>
+          <p class="partner-descr">I get my inspiration from nature and objects around
+            me. I have a passion to colours, typography and skateboards.</p>
+        </li>
+        <li class="partner-list-item">
+          <div class="img-icon airplane-icon">
+            <img srcset="img/Layer-9.jpg 122w,
+                              img/Layer-9@2x.jpg 244w,
+                              img/Layer-9@3x.jpg 366w"
+              sizes="122px" class="partner-img" src="img/Layer-9.jpg" alt="Bradley Hunter" width="122" height="122">
+          </div>
+          <p class="partner-name">Bradley Hunter</p>
+          <p class="partner-descr">Based in Chicago. I love playing tennis and loud
+            music.
+          </p>
+        </li>
+      </ul>
+      <a href="#" class="other-partner-link">See other partners</a>
     </section>
+
   </main>
+
 </body>
+
 
 </html>

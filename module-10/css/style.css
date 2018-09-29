@@ -59,6 +59,7 @@ img {
     rgba(243, 129, 129, 0.9) 100%
   );
 }
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -135,9 +136,11 @@ img {
   color: rgb(252, 227, 138);
   border-bottom: 3px solid rgb(252, 227, 138);
 }
+
 .nav-svg:hover {
   fill: rgb(252, 227, 138);
 }
+
 svg {
   display: block;
   width: 18px;
@@ -393,11 +396,13 @@ svg {
   -o-transition: all 200ms linear;
   transition: all 200ms linear;
 }
+
 .social-svg {
   width: 26px;
   height: 26px;
   fill: #f38181;
 }
+
 .socials-item:not(:last-child) .social-link {
   border-right: 1px solid rgb(243, 129, 129);
 }
@@ -409,6 +414,7 @@ svg {
   transition: all 200ms linear;
   background-color: #f38181;
 }
+
 .social-link:hover .social-svg,
 .social-link:focus .social-svg {
   fill: #fff;

@@ -224,7 +224,7 @@ svg {
 }
 
 .service-list-item:nth-child(1)::before {
-  background-image: url(../img/ALARM.png);
+  background-image: url(../img/sprite.svg#ALARM);
 }
 .service-list-item:nth-child(2)::before {
   background-image: url(../img/LINE_GRAPH.png);

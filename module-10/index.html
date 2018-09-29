@@ -14,71 +14,92 @@
 
 <body>
   <div class="wrap-header">
-    <header class="page-header container">
-      <nav class="nav-block">
-        <a href="#" class="site-logo"><span class="logo-big-letter">m</span>o<span class="logo-big-letter">g</span>o</a>
-        <!-- <img src="img/mogo.png" alt="site-logo" width="89" height="23"> -->
-        <ul class="site-navigation">
-          <li class="nav-item"><a class="nav-item-link" href="#">about</a></li>
-          <li class="nav-item"><a class="nav-item-link" href="#">service</a></li>
-          <li class="nav-item"><a class="nav-item-link" href="#">work</a></li>
-          <li class="nav-item"><a class="nav-item-link" href="#">blog</a></li>
-          <li class="nav-item"><a class="nav-item-link" href="#">contact</a></li>
-          <li class="nav-item">
-            <!-- <a class="nav-item-link" href="#"> -->
-            <svg width="18px" height="18px">
-              <use href="img/sprite.svg#icon-SHOPPING-CART"></use>
-            </svg>
-            <!-- </a> -->
-          </li>
-          <li class="nav-item">
-            <!-- <a class="nav-item-link" href="#"> -->
-            <svg width="18px" height="18px">
-              <use href="img/sprite.svg#icon-MAGNIFYING-GLASS"></use>
-            </svg>
-            <!-- </a> -->
-          </li>
-        </ul>
-      </nav>
-      <p class="header-suptitle">Creative Template</p>
-      <h1 class="header-title">Welcome<br> to MoGo</h1>
-      <button class="header-button">learn more</button>
-    </header>
+    <div class="header-gradient">
+      <header class="page-header container">
+        <nav class="nav-block">
+          <a href="#" class="site-logo"><span class="logo-big-letter">m</span>o<span class="logo-big-letter">g</span>o</a>
+          <!-- <img src="img/mogo.png" alt="site-logo" width="89" height="23"> -->
+          <ul class="site-navigation">
+            <li class="nav-item"><a class="nav-item-link" href="#">about</a></li>
+            <li class="nav-item"><a class="nav-item-link" href="#">service</a></li>
+            <li class="nav-item"><a class="nav-item-link" href="#">work</a></li>
+            <li class="nav-item"><a class="nav-item-link" href="#">blog</a></li>
+            <li class="nav-item"><a class="nav-item-link" href="#">contact</a></li>
+            <li class="nav-item">
+              <a href="#">
+                <svg class="nav-svg" width="18px" height="18px">
+                  <use href="img/sprite.svg#icon-SHOPPING-CART"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <svg class="nav-svg" width="18px" height="18px">
+                  <use href="img/sprite.svg#icon-MAGNIFYING-GLASS"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <p class="header-suptitle">Creative Template</p>
+        <h1 class="header-title">Welcome<br> to MoGo</h1>
+        <button class="header-button">learn more</button>
+      </header>
+    </div>
   </div>
   <main>
     <section class="service container">
       <p class="service-descr">We work with</p>
       <h2 class="servise-title">Amazing Services</h2>
       <ul class="service-list">
+
         <li class="service-list-item">
           <h3 class="service-item-caption">Photography</h3>
           <p class="service-item-text">Lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempor.</p>
+          <svg class="service-svg" width="32px" height="32px">
+            <use href="img/sprite.svg#icon-ALARM"></use>
+          </svg>
         </li>
         <li class="service-list-item">
           <h3 class="service-item-caption">Web Design</h3>
           <p class="service-item-text">Lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempor.</p>
+          <svg class="service-svg" width="32px" height="32px">
+            <use href="img/sprite.svg#icon-LINE-GRAPH"></use>
+          </svg>
         </li>
         <li class="service-list-item">
           <h3 class="service-item-caption">Creativity</h3>
           <p class="service-item-text">Lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempor.</p>
+          <svg class="service-svg" width="32px" height="32px">
+            <use href="img/sprite.svg#icon-COMPUTER-_-OK"></use>
+          </svg>
         </li>
         <li class="service-list-item">
           <h3 class="service-item-caption">seo</h3>
           <p class="service-item-text">Lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempor.</p>
+          <svg class="service-svg" width="32px" height="32px">
+            <use href="img/sprite.svg#icon-BOOK-2"></use>
+          </svg>
         </li>
         <li class="service-list-item">
           <h3 class="service-item-caption">Css/Html</h3>
           <p class="service-item-text">Lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempor.</p>
+          <svg class="service-svg" width="32px" height="32px">
+            <use href="img/sprite.svg#icon-HOME"></use>
+          </svg>
         </li>
         <li class="service-list-item">
           <h3 class="service-item-caption">digital</h3>
           <p class="service-item-text">Lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempor.</p>
+          <svg class="service-svg" width="32px" height="32px">
+            <use href="img/sprite.svg#icon-IMAGE"></use>
+          </svg>
         </li>
       </ul>
     </section>
@@ -99,23 +120,31 @@
               <div class="socials-dlock">
                 <ul class="socials-list">
                   <li class="socials-item">
-                    <a class="social-icon icon-facebook" href="#">
-                      <span class="visually-hidden">facebook</span>
+                    <a class="social-link" href="#">
+                      <svg class="social-svg" width="26px" height="26px">
+                        <use href="img/sprite.svg#icon-facebook"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="socials-item">
-                    <a class="social-icon icon-twitter" href="#">
-                      <span class="visually-hidden">twitter</span>
+                    <a class="social-link" href="#">
+                      <svg class="social-svg" width="26px" height="26px">
+                        <use href="img/sprite.svg#icon-twitter"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="socials-item">
-                    <a class="social-icon icon-pinterest" href="#">
-                      <span class="visually-hidden">pinterest</span>
+                    <a class="social-link" href="#">
+                      <svg class="social-svg" width="26px" height="26px">
+                        <use href="img/sprite.svg#icon-pinterest"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="socials-item">
-                    <a class="social-icon icon-instagram" href="#">
-                      <span class="visually-hidden">instagram</span>
+                    <a class="social-link" href="#">
+                      <svg class="social-svg" width="26px" height="26px">
+                        <use href="img/sprite.svg#icon-instagram"></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>
@@ -132,23 +161,31 @@
               <div class="socials-dlock">
                 <ul class="socials-list">
                   <li class="socials-item">
-                    <a class="social-icon icon-facebook" href="#">
-                      <span class="visually-hidden">facebook</span>
+                    <a class="social-link" href="#">
+                      <svg class="social-svg" width="26px" height="26px">
+                        <use href="img/sprite.svg#icon-facebook"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="socials-item">
-                    <a class="social-icon icon-twitter" href="#">
-                      <span class="visually-hidden">twitter</span>
+                    <a class="social-link" href="#">
+                      <svg class="social-svg" width="26px" height="26px">
+                        <use href="img/sprite.svg#icon-twitter"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="socials-item">
-                    <a class="social-icon icon-pinterest" href="#">
-                      <span class="visually-hidden">pinterest</span>
+                    <a class="social-link" href="#">
+                      <svg class="social-svg" width="26px" height="26px">
+                        <use href="img/sprite.svg#icon-pinterest"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="socials-item">
-                    <a class="social-icon icon-instagram" href="#">
-                      <span class="visually-hidden">instagram</span>
+                    <a class="social-link" href="#">
+                      <svg class="social-svg" width="26px" height="26px">
+                        <use href="img/sprite.svg#icon-instagram"></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>
@@ -165,23 +202,31 @@
               <div class="socials-dlock">
                 <ul class="socials-list">
                   <li class="socials-item">
-                    <a class="social-icon icon-facebook" href="#">
-                      <span class="visually-hidden">facebook</span>
+                    <a class="social-link" href="#">
+                      <svg class="social-svg" width="26px" height="26px">
+                        <use href="img/sprite.svg#icon-facebook"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="socials-item">
-                    <a class="social-icon icon-twitter" href="#">
-                      <span class="visually-hidden">twitter</span>
+                    <a class="social-link" href="#">
+                      <svg class="social-svg" width="26px" height="26px">
+                        <use href="img/sprite.svg#icon-twitter"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="socials-item">
-                    <a class="social-icon icon-pinterest" href="#">
-                      <span class="visually-hidden">pinterest</span>
+                    <a class="social-link" href="#">
+                      <svg class="social-svg" width="26px" height="26px">
+                        <use href="img/sprite.svg#icon-pinterest"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="socials-item">
-                    <a class="social-icon icon-instagram" href="#">
-                      <span class="visually-hidden">instagram</span>
+                    <a class="social-link" href="#">
+                      <svg class="social-svg" width="26px" height="26px">
+                        <use href="img/sprite.svg#icon-instagram"></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>

@@ -4,8 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "browser-sync -w",
+    "lint": "stylelint css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ygine/goit-fe-course/tree/master/module-10.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.24.7",
+    "stylelint": "^9.6.0",
+    "stylelint-config-standard": "^18.2.0"
+  }
 }

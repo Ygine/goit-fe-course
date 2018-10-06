@@ -237,7 +237,6 @@ svg {
 }
 
 .service-list-item {
-  position: relative;
   width: calc(33.333% - 20px);
   -webkit-box-flex: 0;
   -ms-flex-positive: 0;
@@ -245,16 +244,33 @@ svg {
   padding-left: 83px;
 }
 
-.service-svg {
-  position: absolute;
-  top: 3px;
-  left: 20px;
-  width: 32px;
-  height: 32px;
-  fill: #95e1d3;
+.service-icon{
+  background-repeat: no-repeat;
+  background-position: 20px 5px;
 }
-.service-list-item:hover .service-svg {
-  fill: rgba(243, 129, 129, 0.808);
+
+.alarm-icon {
+  background-image: url(../img/ALARM.svg);
+}
+
+.line-graph-icon {
+background-image: url(../img/LINE-GRAPH.svg);
+}
+
+.computer-icon{
+background-image: url(../img/COMPUTER.svg);
+}
+
+.book-icon{
+background-image: url(../img/BOOK-2.svg);
+}
+
+.home-icon{
+background-image: url(../img/HOME.svg);
+}
+
+.image-icon{
+background-image: url(../img/IMAGE.svg);
 }
 
 .service-list-item:not(:nth-last-child(-n + 3)) {

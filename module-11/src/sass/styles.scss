@@ -1,0 +1,20 @@
+//utilits
+@import "utils/variables";
+@import "utils/mixin";
+@import "base/normalize";
+
+//base
+@import "base/fonts";
+@import "base/base";
+@import "base/typography";
+@import "utils/placeholders";
+
+//layout
+@import "layout/header";
+// @import "layout/main";
+@import "layout/services";
+@import "layout/Our-Team";
+@import "layout/footer";
+
+//conponents
+@import "conponents/social-block";

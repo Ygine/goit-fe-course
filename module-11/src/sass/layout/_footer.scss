@@ -1,0 +1,62 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1201px;
+  height: 63px;
+  border-top: 1px solid rgb(229, 229, 229);
+
+  .footer__text {
+    font-family: $font-Monts;
+    @include font-setting(400, 14px, 17px);
+    margin: 0;
+  }
+
+  .form {
+    display: flex;
+  }
+
+  .form__email {
+    width: 230px;
+    height: 40px;
+    margin: 0;
+    padding: 7px 12px;
+    border: 1px solid rgb(231, 231, 231);
+    border-right: none;
+    font-family: $font-stack;
+    @include font-setting(300, 15px, 24px);
+    color: #ccc;
+  }
+
+  .form__button {
+    min-width: 150px;
+    font-family: $font-Monts;
+    @include font-setting(700, 14px, 17px);
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 33px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: $color-skyblue;
+    color: $color-white;
+    transition: all 200ms linear;
+
+    &:hover,
+    &:focus {
+      color: $color-skyblue;
+      background-color: $color-white;
+      border: 1px solid $color-skyblue;
+    }
+  }
+
+  .footer__link {
+    color: $color-pink;
+    text-decoration: none;
+  }
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .wrap-header {
+    background-image: url(../img/Layer15@2x-min.jpg);
+  }
+}

@@ -1,0 +1,72 @@
+.team {
+  text-align: center;
+  margin-bottom: 86px;
+
+  .team__text {
+    display: inline-block;
+    width: 945px;
+    margin-bottom: 90px;
+  }
+  .team__descr {
+    @extend %serv-descr;
+  }
+  .team__title {
+    @extend %serv-title;
+    margin-bottom: 40px;
+  }
+  .team__title::after {
+    @extend %serv-title-after;
+  }
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  .member-cart {
+    position: relative;
+    width: 380px;
+    height: 470px;
+    background-color: #95e1d3;
+    margin-bottom: 28px;
+  }
+  .member-cart__overlay {
+    position: absolute;
+    transition: all 200ms linear;
+  }
+}
+
+.team__item {
+  &:hover .socials-dlock {
+    background: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%
+    );
+  }
+
+  &:hover .socials-list {
+    opacity: 1;
+  }
+
+  &:hover .member-cart__overlay {
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+
+  .team__name {
+    margin-bottom: 10px;
+  }
+
+  .team__position-name {
+    font-family: $font-stack;
+    @include font-setting(300, 15px, 24px);
+    font-style: italic;
+    color: #999;
+    margin: 0;
+  }
+}

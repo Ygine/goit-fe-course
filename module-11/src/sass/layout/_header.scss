@@ -1,0 +1,110 @@
+.wrap-header {
+  min-height: 1000px;
+  background: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%
+    ),
+    url(../img/Layer15-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-header {
+  padding-top: 20px;
+  text-align: center;
+
+  &__title {
+    margin: 0;
+    font-family: $font-caption;
+    @include font-setting(400, 72px, 1.2);
+    color: $color-white;
+    margin-bottom: 36px;
+  }
+
+  &__suptitle {
+    width: 830px;
+    @include font-setting(700, 150px, 140px);
+    font-family: $font-Monts;
+    color: $color-white;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 125px;
+  }
+  &__link {
+    display: block;
+    width: 165px;
+    margin: 0 auto;
+    @include font-setting(700, 14px, 1.2);
+    font-family: $font-Monts;
+    color: $color-white;
+    text-transform: uppercase;
+    padding: 12px 28px;
+    border: 2px solid $color-white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 200ms linear;
+  }
+  &__link:hover {
+    background-color: $color-white;
+    color: $link-hover;
+  }
+}
+
+.nav-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 150px;
+
+  .site-logo {
+    display: block;
+    text-decoration: none;
+    font-family: $font-Monts;
+    @include font-setting(700, 30px, 36px);
+    color: $color-white;
+
+    &__big-letter {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.site-navigation {
+  @extend %head-nav;
+  min-width: 622px;
+  margin-left: auto;
+  margin-right: 50px;
+  justify-content: space-between;
+  align-items: center;
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    font-family: $font-Monts;
+    @include font-setting(400, 14px, 17px);
+    text-transform: uppercase;
+    color: $color-white;
+    padding: 10px 0;
+    border-bottom: 3px solid transparent;
+    transition: all 200ms linear;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $link-hover;
+    border-bottom: 3px solid $link-hover;
+  }
+}
+
+.user-nav {
+  @extend %head-nav;
+
+  &__item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &__icon:hover {
+    fill: $link-hover;
+  }
+}

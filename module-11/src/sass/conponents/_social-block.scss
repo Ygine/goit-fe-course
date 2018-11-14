@@ -1,0 +1,51 @@
+.socials-dlock {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 380px;
+  height: 470px;
+}
+
+.socials-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+.socials__item {
+  background-color: rgb(252, 227, 138);
+
+  &:not(:last-child) .social__link {
+    border-right: 1px solid $color-pink;
+  }
+}
+
+.social-svg {
+  width: 26px;
+  height: 26px;
+  fill: $color-pink;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  transition: all 200ms linear;
+
+  &:hover,
+  &:focus {
+    transition: all 200ms linear;
+    background-color: $color-pink;
+  }
+
+  &:hover .social-svg,
+  &:focus .social-svg {
+    fill: $color-white;
+  }
+}

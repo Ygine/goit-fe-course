@@ -4,15 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "browser-sync src -w ",
-    "sass": "node-sass src/scss/index.scss src/css/styles.css",
-    "sass:watch": "node-sass src/scss/index.scss src/css/styles.css --watch",
+    "server": "browser-sync src -w --no-notify",
+    "sass": "node-sass ./src/sass -o ./src/css",
+    "sass:watch": "node-sass ./src/sass -o ./src/css",
     "dev": "npm run sass && npm run sass:watch & npm run server",
     "lint": "stylelint ./css/*.css",
-    "css": "postcss ./css/*.css --use autoprefixer --use cssnano -d build/css",
+    "css": "postcss src/css/*.css --use autoprefixer --use cssnano -d build/css",
     "clean": "rimraf build && mkdir build",
     "html": "html-minifier --input-dir src --output-dir build --collapse-whitespace --file-ext html",
-    "images": "imagemin ./img/* -o=build/img",
+    "images": "imagemin ./src/img/* -o=build/img",
     "build": "npm run clean && npm run images && npm run sass && npm run css && npm run html"
   },
   "repository": {

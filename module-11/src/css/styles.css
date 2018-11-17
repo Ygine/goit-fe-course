@@ -541,7 +541,7 @@ input[type="radio"].visually-hidden {
 
 .team {
   text-align: center;
-  margin-bottom: 86px; }
+  padding-bottom: 86px; }
   .team .team__text {
     display: inline-block;
     width: 945px;
